@@ -1,0 +1,7 @@
+Creating Collection
+1. Type Safe - Same type of elements or Ojects are added into collection
+	that can be achive using generic ways by diamond operator < String >
+2. Un Type Safe - Different types of elements can be added
+ 
+ 
+ 

@@ -1,0 +1,47 @@
+Java List
+
+List in Java provides the facility to maintain the ordered collection. It contains the index-based methods to insert, 
+update, delete and search the elements. It can have the duplicate elements also. We can also store the null 
+elements in the list.
+
+The List interface is found in the java.util package and inherits the Collection interface. 
+It is a factory of ListIterator interface. Through the ListIterator, we can iterate the list 
+in forward and backward directions. The implementation classes of List interface are ArrayList, 
+LinkedList, Stack and Vector. The ArrayList and LinkedList are widely used in Java programming. 
+The Vector class is deprecated since Java 5.
+
+List Interface declaration
+
+public interface List<E> extends Collection<E>  
+
+Java List Methods
+
+Method	Description
+1. void add(int index, E element)	It is used to insert the specified element at the specified position in a list.
+2. boolean add(E e)	It is used to append the specified element at the end of a list.
+3. boolean addAll(Collection<? extends E> c)	It is used to append all of the elements in the specified collection 
+to the end of a list.
+4. boolean addAll(int index, Collection<? extends E> c)	It is used to append all the elements in the specified collection, 
+starting at the specified position of the list.
+5. void clear()	It is used to remove all of the elements from this list.
+6. boolean equals(Object o)	It is used to compare the specified object with the elements of a list.
+7. int hashcode()	It is used to return the hash code value for a list.
+8. E get(int index)	It is used to fetch the element from the particular position of the list.
+9. boolean isEmpty()	It returns true if the list is empty, otherwise false.
+10. int lastIndexOf(Object o)	It is used to return the index in this list of the last occurrence of the specified 
+element, or -1 if the list does not contain this element.
+11. Object[] toArray()	It is used to return an array containing all of the elements in this list in the correct order.
+12. <T> T[] toArray(T[] a)	It is used to return an array containing all of the elements in this list in the correct order.
+13. boolean contains(Object o)	It returns true if the list contains the specified element
+14. boolean containsAll(Collection<?> c)	It returns true if the list contains all the specified element
+15. int indexOf(Object o)	It is used to return the index in this list of the first occurrence of the specified element, or -1 if the List does not contain this element.
+16. E remove(int index)	It is used to remove the element present at the specified position in the list.	
+17. boolean remove(Object o)	It is used to remove the first occurrence of the specified element.	
+18. boolean removeAll(Collection<?> c)	It is used to remove all the elements from the list.	
+19. void replaceAll(UnaryOperator<E> operator)	It is used to replace all the elements from the list with the specified element.	
+20 .void retainAll(Collection<?> c)	It is used to retain all the elements in the list that are present in the specified collection.	
+21. E set(int index, E element)	It is used to replace the specified element in the list, present at the specified position.	
+22. void sort(Comparator<? super E> c)	It is used to sort the elements of the list on the basis of specified comparator.	
+23. Spliterator<E> spliterator()	It is used to create spliterator over the elements in a list.	
+24. List<E> subList(int fromIndex, int toIndex)	It is used to fetch all the elements lies within the given range.	
+25. int size()	It is used to return the number of elements present in the list.
