@@ -1,0 +1,67 @@
+REGEX Regular Expression
+
+*> Regex used for pattern Matching or String Matching
+
+Expression of REGEX
+[abc]		a b or c
+[^abc]		any character except abc
+[a-z]		a to z
+[A-Z]		A to Z
+[a-zA-Z] 	a to z, or A to Z
+[0-9]		0 to 9
+
+Quantifiers of Regex - We tell the compiler about repetation or occurences 
+[]? 		Occures 0 or 1
+[]+			Occures 1 or more times 
+[]* 		Occures o or more times 
+[]{n}		Occures n number of times 
+[]{n,}		Occures atleast n times or more times 
+[]{y,z}		Occures atleast y times and less than z times 
+
+REGEX metacharacters 
+\d 			[0-9]
+\D			[^0-9] 
+\w 			[a-zA-Z_0-9]
+\W			[^\w]
+
+\ symbol called as accept character 
+
+Examples:
+
+1. Mobile Numbers.
+case: A. Number must be atleast 10 digit 
+case: B. Must start with 9 or 8 
+
+[98][0-9]{9}
+
+2. Password:
+case:	A. 
+  /*
+The password policy is:
+
+At least 8 chars
+
+Contains at least one digit
+
+Contains at least one lower alpha char and one upper alpha char
+
+Contains at least one char within a set of special chars (@#%$^ etc.)
+
+Does not contain space, tab, etc
+
+
+
+3. Email address:
+
+case: 	A. 
+
+[a-zA-z0-9\-\.]+[@][a-z]+[\.][a-z]{2,3}
+
+
+
+
+
+
+
+
+
