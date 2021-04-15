@@ -22,27 +22,18 @@ public class TestEmail {
 	}
 
 }
+/* 	OUTPUT
+D:\rns-com\REGEX>javac TestEmail.java
 
-/*OUTPUT
- * 
- * rahul@gmail.com
- * Email id is valid 
- * 
- * rah .gmail.com
- * Email id is not valid:*/
+D:\rns-com\REGEX>java TestEmail
+rahul@gmail.com
+Email id is valid
 
-/* Pattern - "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+D:\rns-com\REGEX>java TestEmail
+rha kjndkfj
+Email id is not valid:
 
-^ matches the starting of the sentence.
+D:\rns-com\REGEX>
 
-[a-zA-Z0-9+_.-] matches one character from the English alphabet (both cases), digits, “+”, “_”, “.” and, “-” 
-before the @ symbol
-
-+ indicates the repetition of the above-mentioned set of characters one or more times.
-
-@ matches itself.
-
-[a-zA-Z0-9.-] matches one character from the English alphabet (both cases), digits, “.” and “–” after the @ symbol.
-
-$ indicates the end of the sentence.*/
+*/
 
