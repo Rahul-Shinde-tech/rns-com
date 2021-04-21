@@ -3,5 +3,83 @@ Creating Collection
 	that can be achive using generic ways by diamond operator < String >
 2. Un Type Safe - Different types of elements can be added
  
+ Collection Framework / API:
+
+> -- When we need to work on group of objects -> Array (DataStructure)
+
+:cons of Array :               : Pro of Collection  : 
+
+> Fixed in size        			> Growable in nature
+> Homogeneous 					> can hold heterogeneous data
+> No underlaying DS				> Uses many underlaying DS
+> No special Methods			> Provides many useful methods to perform many operations on clusture of data
+
+
+Collection introduced in JDK 1.2 
+
+Basic DS : 
+
+> Array
+
+> List
+> Stack
+> Queue
+> Map
+> Set
+> Tree
+
+> Need of collection framework / why collection?
  
  
+ https://www.jetbrains.com/idea/download/#section=windows
+ 
+ 
+ https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html
+ 
+ https://discuss.codechef.com/t/java-collections-tutorial-part-2/13327
+ 
+ 
+ package com.pro.wings;
+
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.ListIterator;
+
+public class TestCollection {
+
+    static int getCapacity(ArrayList<?> l) throws Exception {
+        Field dataField = ArrayList.class.getDeclaredField("elementData");
+        dataField.setAccessible(true);
+        return ((Object[]) dataField.get(l)).length;
+    }
+    public static void main(String[] args) throws Exception {
+        ArrayList list = new ArrayList(); // 0 capacity list
+
+        System.out.println(getCapacity(list));
+
+        list.add("A");
+        list.add("B");
+        list.add("C");
+        list.add("D");
+        list.add("E");
+        list.add("A");
+        list.add("B");
+        list.add("C");
+        list.add("D");
+        list.add("E");
+        list.add("z");
+
+        System.out.println(getCapacity(list));
+        list.trimToSize();
+        System.out.println(getCapacity(list));
+        System.out.println(list);
+
+
+
+    }
+
+}
+
+

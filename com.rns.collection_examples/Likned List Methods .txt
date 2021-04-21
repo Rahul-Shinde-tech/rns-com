@@ -1,0 +1,51 @@
+LinkedList : constructors and Methods :
+
+
+Constructors : 
+
+1. LinkedList() -- Constructs an empty list.
+
+2. LinkedList(Collection<? extends E> c) -- Constructs a list containing the elements of the specified collection, in the order they are returned by the collection's iterator.
+
+
+Methods :
+
+void	addFirst(E e) -- Inserts the specified element at the beginning of this list.
+
+void	addLast(E e) -- Appends the specified element to the end of this list.
+
+Iterator<E>	descendingIterator() -- Returns an iterator over the elements in this deque in reverse sequential order.
+
+E	element() -- Retrieves, but does not remove, the head (first element) of this list.
+
+E	getFirst() -- Returns the first element in this list.
+
+E	getLast() -- Returns the last element in this list.
+
+boolean	offer(E e) -- Adds the specified element as the tail (last element) of this list.
+
+boolean	offerFirst(E e) -- Inserts the specified element at the front of this list.
+
+boolean	offerLast(E e) -- Inserts the specified element at the end of this list.
+
+E	peek() -- Retrieves, but does not remove, the head (first element) of this list.
+
+E	peekFirst() -- Retrieves, but does not remove, the first element of this list, or returns null if this list is empty.
+
+E	peekLast() -- Retrieves, but does not remove, the last element of this list, or returns null if this list is empty.
+
+E	poll() -- Retrieves and removes the head (first element) of this list.
+
+E	pollFirst() -- Retrieves and removes the first element of this list, or returns null if this list is empty.
+
+E	pollLast() -- Retrieves and removes the last element of this list, or returns null if this list is empty.
+
+E	pop() -- Pops an element from the stack represented by this list.
+
+void	push(E e) -- Pushes an element onto the stack represented by this list.
+
+boolean	removeFirstOccurrence(Object o) -- Removes the first occurrence of the specified element in this list (when traversing the list from head to tail).
+
+E	removeLast() -- Removes and returns the last element from this list.
+
+boolean	removeLastOccurrence(Object o) -- Removes the last occurrence of the specified element in this list (when traversing the list from head to tail).

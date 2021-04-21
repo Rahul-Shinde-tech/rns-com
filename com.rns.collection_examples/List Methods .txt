@@ -1,0 +1,15 @@
+List interface methods : (methods derived from collection interface plus below methods :)
+
+E get(int index) -- Returns the element at the specified position in this list.
+
+int indexOf(Object o) -- Returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element.
+
+int	lastIndexOf(Object o) -- Returns the index of the last occurrence of the specified element in this list, or -1 if this list does not contain the element.
+
+E	set(int index, E element) -- Replaces the element at the specified position in this list with the specified element (optional operation).
+
+List<E>	subList(int fromIndex, int toIndex) -- Returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+
+ListIterator<E> listIterator()  -- Returns a list iterator over the elements in this list (in proper sequence).
+
+ListIterator<E>	listIterator(int index) -- Returns a list iterator over the elements in this list (in proper sequence), starting at the specified position in the list

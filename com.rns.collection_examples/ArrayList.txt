@@ -1,0 +1,17 @@
+ArrayList - constructors/ methods 
+
+Constructors :  
+
+1. ArrayList() -- Constructs an empty list with an initial capacity of ten.
+
+2. ArrayList(Collection<? extends E> c) -- Constructs a list containing the elements of the specified collection, in the order they are returned by the collection's iterator.
+
+3. ArrayList(int initialCapacity) -- Constructs an empty list with the specified initial capacity.
+
+Methods :
+
+1. void	ensureCapacity(int minCapacity) -- Increases the capacity of this ArrayList instance, if necessary, to ensure that it can hold at least the number of elements specified by the minimum capacity argument.
+
+2. protected void	removeRange(int fromIndex, int toIndex) -- Removes from this list all of the elements whose index is between fromIndex, inclusive, and toIndex, exclusive.
+
+3. void	trimToSize() -- Trims the capacity of this ArrayList instance to be the list's current size.
