@@ -1,0 +1,124 @@
+MAVEN 
+
+How to Install Maven ?
+
+Whats are the diff pahses and goals of Maven ? what is their diff ?
+https://stackoverflow.com/questions/16205778/what-are-maven-goals-and-phases-and-what-is-their-difference
+
+https://howtodoinjava.com/eclipse/how-to-import-maven-remote-archetype-catalogs-in-eclipse/
+
+Maven Interview Questions ?
+https://www.edureka.co/blog/interview-questions/maven-interview-questions/#convention
+
+Whats are the commands used in Maven ?
+https://www.journaldev.com/33645/maven-commands-options-cheat-sheet
+
+How do you build the project for specific environment like dev, test,  prod?
+
+Ans : we had profiles defined in POM/settings xml
+
+and on command promt we were using '-P' option
+
+Like - > mvn install -P dev
+
+this builds the code for development environment
+
+https://maven.apache.org/guides/mini/guide-building-for-different-environments.html
+
+Mention the difference between Apache Ant and Maven?
+
+Apache Ant Maven
+
+Ant is a toolbox - Maven is a framework
+Ant does not have formal conventions like project directory structure - Maven has conventions
+Ant is procedural; you have to tell to compile, copy and compress - Maven is declarative ( information on what to make 
+& how to build)
+Ant does not have lifecycle; you have to add sequence of tasks manually - Maven has a lifecycle
+Ant scripts are not reusable - Maven plugins are reusable
+
+In Maven what are the two setting files called and what are their location?
+
+Q. In Maven, the setting files are called settings.xml, and the two setting files are located at
+Ans:
+Maven installation directory: $M2_Home/conf/settings.xml -- global settings xml
+User’s home directory: ${ user.home }/ .m2 / settings.xml  -- users settings xml
+
+
+What are the different phases of a Maven Build Lifecycle? <<Important
+
+
+Q: What types of Maven repository? How it works?
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>Maven - Build Lifecycle, Phases and Goals <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+-----------------------------------------------------------------------------------------------------------------------------
+Maven defines 4 items of a build process:
+
+
+Build-Lifecycle-->> Phases -->> Goals   [Plugin - group of Goals]
+-----------------------------------------------------------------------------------------------------------------
+
+>>>Build-Lifecycle - Three built-in lifecycles : default, clean, site.
+
+	> default L.C. - has 23 phases  -- default L.C./its phases are responsible for managing the Project - build/compile/package/deploy
+	
+	> clean L.C.   - has  3 phases   -- clean L.C./its phases are responsible for cleaning the project and removing the previous build or generated classes from Target folder.
+	
+	> site  L.C.   - has  4 phases  -- site L.C./its phases are responsible for generating the reports/documentation of project.
+
+>>>Phase - Each lifecycle is made up of phases, e.g. for the default lifecycle has 23 phases: validate, compile, test, package, install, deploy etc.
+
+Some phases of default L.C. -
+
+	> validate - checks if all information - necessary for buid is available 
+	> compile  - compiles the source code
+	> test-compile - compiles the test > source code
+	> test     - it runs the unit tests of project
+	> package  - it packages the compiled class files in to JAR/WAR/EAR
+	> install  - it installs/creates the generated package (JAR/WAR/EAR) into target folder and also into local resository.
+	> deploy   - it copies the package to remote repository.
+
+Important Note - All phases will be executed as per specific order.(i.e. even though if we execute deploy phase, which is last phase, maven will execute all its previous phases first.)
+
+syntax - > mvn <PHASE>   e.g.- mvn install/ mvn deploy
+-----------------------------------------------------------------------------------------------------------
+
+>>>Goal - The task (action) that is executed.
+
+	> Each phase is nothing but the sequence of Goals associated with it, and responsible for specific task.
+	> When we execute a phase, t
+
+Ex. - 
+	> compiler : compile  -- its bound to compile phase
+	> compiler : test-compile -- its bound to test-compile phase
+	> surefire : test  -- its bound to the test phase
+	> dependency : tree -- its bound to dependency phase - displays the tree of all dependencies
+	> dependency:analyze -- analyzes the maven project to identify the unused declared and used undeclared dependencies.
+	> jar : jar -- it bounds to package phase.
+	
+	> eclipse : eclipse  -- it converts the projects structure fesible to eclipse
+	> idea : idea  -- it converts the projects structure fesible to idea -intellij
+	
+------------------------------------------------------------------------------------------------------------
+
+>>>Plugin - it is nothing but a group of goals
+
+Based on packaging type (jar, war, etc.) plugins' goals are bound to phases by default. (Built-in Lifecycle Bindings)
+
+One or more goals need to be specified when configuring a plugin in a POM. Additionally, in case a plugin does not have a default phase defined, the specified goal(s) can be bound to a phase.
+
+Maven can be invoked with:
+
+a phase (e.g clean, package)
+<plugin-prefix>:<goal> (e.g. dependency:copy-dependencies)
+<plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal> (e.g.org.apache.maven.plugins:maven-compiler-plugin:3.7.0:compile)
+
+with one or more combinations of any or all, e.g.:
+
+mvn clean dependency:copy-dependencies package
+	
+	> This command will clean the project, copy dependencies, and package the project (executing all phases up to package, of course).
+-------------------------------------------------------------------------------------------------
+
+
+

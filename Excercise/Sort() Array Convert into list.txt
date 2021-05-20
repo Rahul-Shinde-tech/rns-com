@@ -1,0 +1,18 @@
+		Integer[] my_array1 = { 1789, 2035, 1899, 1456, 2013, 1458, 2458, 1254, 1472, 2365, 1456, 2165, 1457, 2456 };
+
+		String[] my_array2 = { "Java", "Python", "PHP", "C#", "C Programming", "C++" };
+
+		List<Integer> list = Arrays.asList(my_array1);
+		Set<Integer> set = new TreeSet<Integer>(list);
+		System.out.println(set);
+		Arrays.sort(my_array1);
+		System.out.println("=============");
+		System.out.print(Arrays.toString(my_array1));
+		
+		System.out.println("=============");
+		List<String> lst = Arrays.asList(my_array2);
+		Set<String> str=new TreeSet<String>(lst);
+		Arrays.sort(my_array1);
+		System.out.print(Arrays.toString(my_array2));
+		System.out.println("=============");
+		System.out.println(str);
