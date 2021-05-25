@@ -1,0 +1,779 @@
+countLine:1
+countLine:2
+countLine:3
+countLine:4
+countLine:5
+countLine:6
+My Line First Elemet:4
+
+Calling Table Column :4
+May 25, 2021 11:01:00 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.0.0.Final}
+May 25, 2021 11:01:00 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+May 25, 2021 11:01:00 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+May 25, 2021 11:01:00 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+May 25, 2021 11:01:00 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 25, 2021 11:01:00 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 25, 2021 11:01:00 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 25, 2021 11:01:00 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 25, 2021 11:01:00 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 25, 2021 11:01:01 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 25, 2021 11:01:02 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+May 25, 2021 11:01:02 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 25, 2021 11:01:02 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 25, 2021 11:01:02 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 25, 2021 11:01:02 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 25, 2021 11:01:02 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 25, 2021 11:01:02 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 25, 2021 11:01:02 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Submitted to Database:
+countLine:7
+My Line First Elemet:4
+
+Calling Table Column :4
+May 25, 2021 11:01:02 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 25, 2021 11:01:02 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 25, 2021 11:01:02 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 25, 2021 11:01:02 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 25, 2021 11:01:02 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 25, 2021 11:01:02 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 25, 2021 11:01:03 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Submitted to Database:
+countLine:8
+My Line First Elemet:5
+
+Calling Table Column :5
+May 25, 2021 11:01:03 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 25, 2021 11:01:03 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 25, 2021 11:01:03 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 25, 2021 11:01:03 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 25, 2021 11:01:03 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 25, 2021 11:01:03 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 25, 2021 11:01:03 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Submitted to Database:
+countLine:9
+My Line First Elemet:1
+
+Calling Table Column :1
+May 25, 2021 11:01:03 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 25, 2021 11:01:03 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 25, 2021 11:01:03 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 25, 2021 11:01:03 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 25, 2021 11:01:03 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 25, 2021 11:01:03 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 25, 2021 11:01:03 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Submitted to Database:
+countLine:10
+My Line First Elemet:2
+
+Calling Table Column :2
+May 25, 2021 11:01:03 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 25, 2021 11:01:03 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 25, 2021 11:01:03 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 25, 2021 11:01:03 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 25, 2021 11:01:03 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 25, 2021 11:01:03 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 25, 2021 11:01:03 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Submitted to Database:
+countLine:11
+My Line First Elemet:1
+
+Calling Table Column :1
+May 25, 2021 11:01:04 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 25, 2021 11:01:04 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 25, 2021 11:01:04 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 25, 2021 11:01:04 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 25, 2021 11:01:04 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 25, 2021 11:01:04 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 25, 2021 11:01:04 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Submitted to Database:
+countLine:12
+My Line First Elemet:1
+
+Calling Table Column :1
+May 25, 2021 11:01:04 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 25, 2021 11:01:04 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 25, 2021 11:01:04 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 25, 2021 11:01:04 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 25, 2021 11:01:04 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 25, 2021 11:01:04 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 25, 2021 11:01:04 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Submitted to Database:
+countLine:13
+My Line First Elemet:1
+
+Calling Table Column :1
+May 25, 2021 11:01:04 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 25, 2021 11:01:04 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 25, 2021 11:01:04 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 25, 2021 11:01:04 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 25, 2021 11:01:04 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 25, 2021 11:01:04 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 25, 2021 11:01:04 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Submitted to Database:
+File Submitted SuccessFully:
+
+============================>>><<<===========
+countLine:1
+countLine:2
+countLine:3
+countLine:4
+countLine:5
+countLine:6
+My Line First Elemet:4
+
+Calling Table Column :4
+May 25, 2021 11:06:53 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.0.0.Final}
+May 25, 2021 11:06:53 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+May 25, 2021 11:06:53 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+May 25, 2021 11:06:54 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+May 25, 2021 11:06:54 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 25, 2021 11:06:54 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 25, 2021 11:06:54 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 25, 2021 11:06:54 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 25, 2021 11:06:54 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 25, 2021 11:06:54 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 25, 2021 11:06:55 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 25, 2021 11:06:56 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 25, 2021 11:06:56 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+WARN: SQL Error: 1406, SQLState: 22001
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+ERROR: Data truncation: Data too long for column 'CreationDateTime' at row 1
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl release
+INFO: HHH000010: On release of batch it still contained JDBC statements
+May 25, 2021 11:06:56 PM org.hibernate.internal.SessionImpl$5 mapManagedFlushFailure
+ERROR: HHH000346: Error during managed flush [could not execute statement]
+org.hibernate.exception.DataException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:52)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:95)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:207)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2823)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3323)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:89)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:447)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:333)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:335)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1224)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:464)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2890)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2266)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:146)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:230)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at org.test.FileTest.saveUser(FileTest.java:162)
+	at org.test.FileTest.FileInput(FileTest.java:97)
+	at org.test.GameTest.main(GameTest.java:7)
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'CreationDateTime' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3868)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3806)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2470)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2617)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2550)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2073)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2009)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5094)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1994)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)
+	... 20 more
+Submitted to Database:
+countLine:7
+My Line First Elemet:4
+
+Calling Table Column :4
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 25, 2021 11:06:56 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 25, 2021 11:06:56 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+WARN: SQL Error: 1406, SQLState: 22001
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+ERROR: Data truncation: Data too long for column 'NoteDateTime' at row 1
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl release
+INFO: HHH000010: On release of batch it still contained JDBC statements
+May 25, 2021 11:06:56 PM org.hibernate.internal.SessionImpl$5 mapManagedFlushFailure
+ERROR: HHH000346: Error during managed flush [could not execute statement]
+org.hibernate.exception.DataException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:52)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:95)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:207)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2823)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3323)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:89)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:447)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:333)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:335)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1224)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:464)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2890)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2266)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:146)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:230)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at org.test.FileTest.saveUser(FileTest.java:162)
+	at org.test.FileTest.FileInput(FileTest.java:97)
+	at org.test.GameTest.main(GameTest.java:7)
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'NoteDateTime' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3868)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3806)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2470)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2617)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2550)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2073)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2009)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5094)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1994)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)
+	... 20 more
+Submitted to Database:
+countLine:8
+My Line First Elemet:5
+
+Calling Table Column :5
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 25, 2021 11:06:56 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 25, 2021 11:06:56 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 25, 2021 11:06:56 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+WARN: SQL Error: 1406, SQLState: 22001
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+ERROR: Data truncation: Data too long for column 'CreationDateTime' at row 1
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl release
+INFO: HHH000010: On release of batch it still contained JDBC statements
+May 25, 2021 11:06:57 PM org.hibernate.internal.SessionImpl$5 mapManagedFlushFailure
+ERROR: HHH000346: Error during managed flush [could not execute statement]
+org.hibernate.exception.DataException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:52)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:95)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:207)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2823)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3323)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:89)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:447)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:333)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:335)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1224)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:464)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2890)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2266)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:146)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:230)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at org.test.FileTest.saveUser(FileTest.java:162)
+	at org.test.FileTest.FileInput(FileTest.java:112)
+	at org.test.GameTest.main(GameTest.java:7)
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'CreationDateTime' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3868)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3806)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2470)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2617)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2550)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2073)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2009)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5094)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1994)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)
+	... 20 more
+Submitted to Database:
+countLine:9
+My Line First Elemet:1
+
+Calling Table Column :1
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 25, 2021 11:06:57 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 25, 2021 11:06:57 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+WARN: SQL Error: 1406, SQLState: 22001
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+ERROR: Data truncation: Data too long for column 'Denom' at row 1
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl release
+INFO: HHH000010: On release of batch it still contained JDBC statements
+May 25, 2021 11:06:57 PM org.hibernate.internal.SessionImpl$5 mapManagedFlushFailure
+ERROR: HHH000346: Error during managed flush [could not execute statement]
+org.hibernate.exception.DataException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:52)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:95)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:207)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2823)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3323)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:89)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:447)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:333)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:335)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1224)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:464)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2890)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2266)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:146)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:230)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at org.test.FileTest.saveUser(FileTest.java:162)
+	at org.test.FileTest.FileInput(FileTest.java:59)
+	at org.test.GameTest.main(GameTest.java:7)
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'Denom' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3868)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3806)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2470)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2617)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2550)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2073)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2009)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5094)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1994)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)
+	... 20 more
+Submitted to Database:
+countLine:10
+My Line First Elemet:2
+
+Calling Table Column :2
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 25, 2021 11:06:57 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 25, 2021 11:06:57 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Submitted to Database:
+countLine:11
+My Line First Elemet:1
+
+Calling Table Column :1
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 25, 2021 11:06:57 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 25, 2021 11:06:57 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 25, 2021 11:06:57 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+May 25, 2021 11:06:58 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+WARN: SQL Error: 1406, SQLState: 22001
+May 25, 2021 11:06:58 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+ERROR: Data truncation: Data too long for column 'Denom' at row 1
+May 25, 2021 11:06:58 PM org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl release
+INFO: HHH000010: On release of batch it still contained JDBC statements
+May 25, 2021 11:06:58 PM org.hibernate.internal.SessionImpl$5 mapManagedFlushFailure
+ERROR: HHH000346: Error during managed flush [could not execute statement]
+Submitted to Database:
+countLine:12
+My Line First Elemet:1
+
+Calling Table Column :1
+org.hibernate.exception.DataException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:52)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:95)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:207)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2823)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3323)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:89)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:447)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:333)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:335)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1224)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:464)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2890)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2266)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:146)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:230)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at org.test.FileTest.saveUser(FileTest.java:162)
+	at org.test.FileTest.FileInput(FileTest.java:59)
+	at org.test.GameTest.main(GameTest.java:7)
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'Denom' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3868)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3806)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2470)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2617)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2550)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2073)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2009)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5094)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1994)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)
+	... 20 more
+May 25, 2021 11:06:58 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 25, 2021 11:06:58 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 25, 2021 11:06:58 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 25, 2021 11:06:58 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 25, 2021 11:06:58 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 25, 2021 11:06:58 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 25, 2021 11:06:58 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+May 25, 2021 11:06:58 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+WARN: SQL Error: 1406, SQLState: 22001
+May 25, 2021 11:06:58 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+ERROR: Data truncation: Data too long for column 'Denom' at row 1
+May 25, 2021 11:06:58 PM org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl release
+INFO: HHH000010: On release of batch it still contained JDBC statements
+May 25, 2021 11:06:58 PM org.hibernate.internal.SessionImpl$5 mapManagedFlushFailure
+ERROR: HHH000346: Error during managed flush [could not execute statement]
+org.hibernate.exception.DataException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:52)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:95)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:207)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2823)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3323)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:89)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:447)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:333)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:335)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1224)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:464)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2890)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2266)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:146)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:230)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at org.test.FileTest.saveUser(FileTest.java:162)
+	at org.test.FileTest.FileInput(FileTest.java:59)
+	at org.test.GameTest.main(GameTest.java:7)
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'Denom' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3868)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3806)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2470)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2617)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2550)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2073)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2009)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5094)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1994)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)
+	... 20 more
+Submitted to Database:
+countLine:13
+My Line First Elemet:1
+
+Calling Table Column :1
+May 25, 2021 11:06:58 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 25, 2021 11:06:58 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 25, 2021 11:06:58 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 25, 2021 11:06:58 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 25, 2021 11:06:58 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 25, 2021 11:06:58 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 25, 2021 11:06:58 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+May 25, 2021 11:06:58 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+WARN: SQL Error: 1406, SQLState: 22001
+May 25, 2021 11:06:58 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+ERROR: Data truncation: Data too long for column 'Denom' at row 1
+May 25, 2021 11:06:58 PM org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl release
+INFO: HHH000010: On release of batch it still contained JDBC statements
+May 25, 2021 11:06:58 PM org.hibernate.internal.SessionImpl$5 mapManagedFlushFailure
+ERROR: HHH000346: Error during managed flush [could not execute statement]
+org.hibernate.exception.DataException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:52)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:95)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:207)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2823)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3323)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:89)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:447)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:333)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:335)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1224)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:464)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2890)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2266)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:146)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:230)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at org.test.FileTest.saveUser(FileTest.java:162)
+	at org.test.FileTest.FileInput(FileTest.java:59)
+	at org.test.GameTest.main(GameTest.java:7)
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'Denom' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3868)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3806)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2470)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2617)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2550)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2073)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2009)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5094)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1994)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)
+	... 20 more
+Submitted to Database:
+File Submitted SuccessFully:
+
+mysql> select * from gametable;
++------------+-------+------------------+-------------+----------+---------------+----------+-----------+------------+-------+--------------+------------+------------+-----------------+----------------+--------------+----------+------------+---------+------------------+-----------------------------+--------------------------------+--------------------------+----------------------+-------------------------+-------------------+-----------------+----------+---------------+-----------------------------+--------------------+-------------+----------------+-------------+-------------------+------------+---------+-----------------+--------------+--------------+-----------------+------------+------------------+-----------+----------+
+| RecordType | VLTID | CreationDateTime | LogSequence | DeviceID | TransactionID | GameTime | PlayState | PlayResult | Denom | InitialWager | FinalWager | InitialWin | SecondaryPlayed | SecondaryWager | SecondaryWin | FinalWin | PaytableId | ThemeId | InitialStartTime | InitialPlayerCashableAmount | InitialPlayerNonCashableAmount | InitialPlayerPromoAmount | PlayerCashableAmount | PlayerNonCashableAmount | PlayerPromoAmount | PlayerSessionID | PlayerID | WinLevelIndex | WinLevelCombo               | ProgressiveAllowed | DeviceClass | CashableAmount | PromoAmount | NonCashableAmount | CurrencyID | DenomID | BaseCashableAmt | NoteDateTime | ValidationID | VoucherSequence | VoucherAmt | TransferDateTime | SessionID | FileName |
++------------+-------+------------------+-------------+----------+---------------+----------+-----------+------------+-------+--------------+------------+------------+-----------------+----------------+--------------+----------+------------+---------+------------------+-----------------------------+--------------------------------+--------------------------+----------------------+-------------------------+-------------------+-----------------+----------+---------------+-----------------------------+--------------------+-------------+----------------+-------------+-------------------+------------+---------+-----------------+--------------+--------------+-----------------+------------+------------------+-----------+----------+
+| 2          | NULL  | NULL             | NULL        | NULL     | NULL          | NULL     | NULL      | NULL       | NULL  | NULL         | NULL       | NULL       | NULL            | NULL           | NULL         | NULL     | NULL       | NULL    | NULL             | NULL                        | NULL                           | NULL                     | NULL                 | NULL                    | NULL              | NULL            | NULL     | 22            | MainGameWins_3YellowStarfis | false              | NULL        | NULL           | NULL        | NULL              | NULL       | NULL    | NULL            | NULL         | NULL         | NULL            | NULL       | NULL             | NULL      | NULL     |
+| 2          | NULL  | NULL             | NULL        | NULL     | NULL          | NULL     | NULL      | NULL       | NULL  | NULL         | NULL       | NULL       | NULL            | NULL           | NULL         | NULL     | NULL       | NULL    | NULL             | NULL                        | NULL                           | NULL                     | NULL                 | NULL                    | NULL              | NULL            | NULL     | 22            | MainGameWins_3YellowStarfis | false              | NULL        | NULL           | NULL        | NULL              | NULL       | NULL    | NULL            | NULL         | NULL         | NULL            | NULL       | NULL             | NULL      | NULL     |
++------------+-------+------------------+-------------+----------+---------------+----------+-----------+------------+-------+--------------+------------+------------+-----------------+----------------+--------------+----------+------------+---------+------------------+-----------------------------+--------------------------------+--------------------------+----------------------+-------------------------+-------------------+-----------------+----------+---------------+-----------------------------+--------------------+-------------+----------------+-------------+-------------------+------------+---------+-----------------+--------------+--------------+-----------------+------------+------------------+-----------+----------+
+2 rows in set (0.00 sec)
+
+=======================>>>>>>>>>>>>><<<<<<<<<<<<====================
+mysql> create table gametable(
+    -> RecordType varchar(7) NULL,
+    ->  VLTID   varchar (10)  NULL,
+    ->  CreationDateTime   varchar(10)  NULL,
+    ->  LogSequence   varchar(30) NULL,
+    ->  DeviceID   varchar(30) NULL,
+    ->  TransactionID   varchar (40)  NULL,
+    ->  GameTime   varchar(30) NULL,
+    ->  PlayState   varchar (40)  NULL,
+    ->  PlayResult   varchar (15)  NULL,
+    ->  Denom   varchar(30) NULL,
+    ->  InitialWager   varchar(30) NULL,
+    ->  FinalWager   varchar(40) NULL,
+    ->  InitialWin   varchar(40) NULL,
+    ->  SecondaryPlayed    varchar(40)   NULL,
+    ->  SecondaryWager    varchar(40)   NULL,
+    ->  SecondaryWin    varchar(40)   NULL,
+    ->  FinalWin    varchar(40)   NULL,
+    ->  PaytableId   varchar (50)  NULL,
+    ->  ThemeId   varchar (50)  NULL,
+    ->  InitialStartTime   varchar (10)  NULL,
+    ->  InitialPlayerCashableAmount    varchar(40)   NULL,
+    ->  InitialPlayerNonCashableAmount    varchar(40)   NULL,
+    ->  InitialPlayerPromoAmount    varchar(40)   NULL,
+    ->  PlayerCashableAmount    varchar(40)   NULL,
+    ->  PlayerNonCashableAmount   varchar(40) NULL,
+    ->  PlayerPromoAmount    varchar(40)   NULL,
+    ->  PlayerSessionID   varchar (40)  NULL,
+    ->  PlayerID   varchar (40)  NULL,
+    ->  WinLevelIndex   varchar (40)  NULL,
+    ->  WinLevelCombo   varchar (30)  NULL,
+    ->  ProgressiveAllowed   varchar (40)  NULL,
+    ->  DeviceClass   varchar (20)  NULL,
+    ->  CashableAmount    varchar(40)   NULL,
+    ->  PromoAmount    varchar(40)   NULL,
+    ->  NonCashableAmount    varchar(40)   NULL,
+    ->  CurrencyID   varchar (40)  NULL,
+    ->  DenomID    varchar(40)   NULL,
+    ->  BaseCashableAmt    varchar(40)   NULL,
+    ->  NoteDateTime   varchar (10)  NULL,
+    ->  ValidationID   varchar (20)  NULL,
+    ->  VoucherSequence   varchar (5)  NULL,
+    ->  VoucherAmt    varchar(40)   NULL,
+    ->  TransferDateTime   varchar (10)  NULL,
+    ->  SessionID   varchar (50)  NULL,
+    ->  FileName   varchar (50)  NULL
+    -> );
+Query OK, 0 rows affected (0.34 sec)
+
+mysql> select * from gametable;
++------------+--------+------------------+----------------------------+----------+---------------+----------+----------------------------+---------------+--------------+--------------+------------+------------+-----------------+----------------+--------------+----------+------------+---------+------------------+-----------------------------+--------------------------------+----------------------------+----------------------+-------------------------+-------------------+-----------------+----------+---------------+-----------------------------+--------------------+-------------+----------------+-------------+-------------------+------------+---------+-----------------+--------------+--------------+-----------------+------------+------------------+-----------+----------+
+| RecordType | VLTID  | CreationDateTime | LogSequence                | DeviceID | TransactionID | GameTime | PlayState                  | PlayResult    | Denom        | InitialWager | FinalWager | InitialWin | SecondaryPlayed | SecondaryWager | SecondaryWin | FinalWin | PaytableId | ThemeId | InitialStartTime | InitialPlayerCashableAmount | InitialPlayerNonCashableAmount | InitialPlayerPromoAmount   | PlayerCashableAmount | PlayerNonCashableAmount | PlayerPromoAmount | PlayerSessionID | PlayerID | WinLevelIndex | WinLevelCombo               | ProgressiveAllowed | DeviceClass | CashableAmount | PromoAmount | NonCashableAmount | CurrencyID | DenomID | BaseCashableAmt | NoteDateTime | ValidationID | VoucherSequence | VoucherAmt | TransferDateTime | SessionID | FileName |
++------------+--------+------------------+----------------------------+----------+---------------+----------+----------------------------+---------------+--------------+--------------+------------+------------+-----------------+----------------+--------------+----------+------------+---------+------------------+-----------------------------+--------------------------------+----------------------------+----------------------+-------------------------+-------------------+-----------------+----------+---------------+-----------------------------+--------------------+-------------+----------------+-------------+-------------------+------------+---------+-----------------+--------------+--------------+-----------------+------------+------------------+-----------+----------+
+| 1          | 143709 | NULL             | 2020-12-02-08.34.29.000000 | 3185875  | 18            | 3243817  | 2020-12-02-08.34.29.000000 | G2S_gameEnded | G2S_gameWon  | $0.01        | NULL       | $0.5       | $0.5            | NULL           | $0.1         | $0       | $0         | $0      | $0.1             | GTK_10800A-PS               | GTK_OceanMagic                 | 2020-12-02-08.34.27.000000 | $4.5                 | $0                      | $0                | $4.60           | $0       | NULL          | NULL                        | NULL               | NULL        | NULL           | NULL        | NULL              | NULL       | NULL    | NULL            | NULL         | NULL         | NULL            | NULL       | NULL             | NULL      | NULL     |
+| 2          | NULL   | NULL             | NULL                       | NULL     | NULL          | NULL     | NULL                       | NULL          | NULL         | NULL         | NULL       | NULL       | NULL            | NULL           | NULL         | NULL     | NULL       | NULL    | NULL             | NULL                        | NULL                           | NULL                       | NULL                 | NULL                    | NULL              | NULL            | NULL     | 22            | MainGameWins_3YellowStarfis | false              | NULL        | NULL           | NULL        | NULL              | NULL       | NULL    | NULL            | NULL         | NULL         | NULL            | NULL       | NULL             | NULL      | NULL     |
+| 1          |        | NULL             |                            | 3185876  | 18            | 3243818  | 2020-12-02-08.34.33.000000 | G2S_gameEnded | G2S_gameLost | $0.01        | NULL       | $0.5       | $0.5            | NULL           | $0           | $0       | $0         | $0      | $0               | GTK_10800A-PS               | GTK_OceanMagic                 | 2020-12-02-08.34.30.000000 | $4.10                | $0                      | $0                | $4.10           | $0       | NULL          | NULL                        | NULL               | NULL        | NULL           | NULL        | NULL              | NULL       | NULL    | NULL            | NULL         | NULL         | NULL            | NULL       | NULL             | NULL      | NULL     |
+| 1          |        | NULL             |                            | 3185877  | 18            | 3243819  | 2020-12-02-08.34.36.000000 | G2S_gameEnded | G2S_gameLost | $0.01        | NULL       | $0.5       | $0.5            | NULL           | $0           | $0       | $0         | $0      | $0               | GTK_10800A-PS               | GTK_OceanMagic                 | 2020-12-02-08.34.33.000000 | $3.6                 | $0                      | $0                | $3.6            | $0       | NULL          | NULL                        | NULL               | NULL        | NULL           | NULL        | NULL              | NULL       | NULL    | NULL            | NULL         | NULL         | NULL            | NULL       | NULL             | NULL      | NULL     |
+| 1          |        | NULL             |                            | 3185878  | 18            | 3243820  | 2020-12-02-08.34.39.000000 | G2S_gameEnded | G2S_gameLost | $0.01        | NULL       | $0.5       | $0.5            | NULL           | $0           | $0       | $0         | $0      | $0               | GTK_10800A-PS               | GTK_OceanMagic                 | 2020-12-02-08.34.36.000000 | $3.1                 | $0                      | $0                | $3.1            | $0       | NULL          | NULL                        | NULL               | NULL        | NULL           | NULL        | NULL              | NULL       | NULL    | NULL            | NULL         | NULL         | NULL            | NULL       | NULL             | NULL      | NULL     |
++------------+--------+------------------+----------------------------+----------+---------------+----------+----------------------------+---------------+--------------+--------------+------------+------------+-----------------+----------------+--------------+----------+------------+---------+------------------+-----------------------------+--------------------------------+----------------------------+----------------------+-------------------------+-------------------+-----------------+----------+---------------+-----------------------------+--------------------+-------------+----------------+-------------+-------------------+------------+---------+-----------------+--------------+--------------+-----------------+------------+------------------+-----------+----------+
+5 rows in set (0.00 sec)
+
+mysql>
+
+
+
+
+
+
+

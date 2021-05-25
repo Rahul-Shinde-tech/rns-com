@@ -132,5 +132,28 @@ mysql> desc users;
 
 mysql>
 
+mysql> status
+--------------
+C:\Program Files\MySQL\MySQL Server 5.7\bin\mysql.exe  Ver 14.14 Distrib 5.7.33, for Win64 (x86_64)
+
+Connection id:          4
+Current database:
+Current user:           root@localhost
+SSL:                    Cipher in use is ECDHE-RSA-AES128-GCM-SHA256
+Using delimiter:        ;
+Server version:         5.7.33-log MySQL Community Server (GPL)
+Protocol version:       10
+Connection:             localhost via TCP/IP
+Server characterset:    latin1
+Db     characterset:    latin1
+Client characterset:    cp850
+Conn.  characterset:    cp850
+TCP port:               3306
+Uptime:                 5 days 3 min 6 sec
+
+Threads: 1  Questions: 21  Slow queries: 0  Opens: 109  Flush tables: 1  Open tables: 102  Queries per second avg: 0.000
+--------------
+
+
 
 
