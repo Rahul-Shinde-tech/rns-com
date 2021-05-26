@@ -9,13 +9,17 @@ import org.hibernate.Transaction;
 
 public class FileTest {
 	static GameTable gameTable = null;
-	static String vltId = "";
-	static StringBuffer sb = new StringBuffer();
+	static String vltId = "ABC";
+	//static String prev="pqr";
+	//static StringBuilder sb = new StringBuilder();
+	
 	public static void FileInput(String fileUrl) throws Exception {
 		FileReader fr = new FileReader(fileUrl);
 		BufferedReader br = new BufferedReader(fr);
 		int countLine = 0;
+		//sb."12345";
 		String s;
+		String[] str1 = new String[50];
 		while ((s=br.readLine()) != null) {
 			
 			countLine += 1;
@@ -23,41 +27,55 @@ public class FileTest {
 			if (countLine >= 6) {
 				//String s = br.readLine();
 				String[] str = SingleLine(s);
-				sb.append(str[1]);
-				if (str[1]==" ") {
-					//str[1] = vltId.toString();
-					str[1]= sb.toString();
-				}
+				//sb.append(str[1]);
+					
+				 if(str[1].trim().length()!=0 &&( !"2".equals(str[0]))) {
+					 vltId=str[1];
+				 }/*else if(str[1].trim().length()!=0 && ( "2".equals(str[0]))) {
+					 str1 = SingleLine(s);
+					 System.out.println(str1[0]);
+					 System.out.println(str1[1]);
+					 System.out.println(str1[2]);
+					 System.out.println(str1[3]);
+					 
+				 }*/
 				System.out.println("My Line First Elemet:" + str[0]);
 				System.out.println();
 				if ("1".equals(str[0])) {
 					System.out.println("Calling Table Column :1");
 					gameTable = FileTest.getInstance();
 					gameTable.setRecordType(str[0]);
-					gameTable.setVLTID(str[1]);
-					gameTable.setLogSequence(str[2]);
-					gameTable.setDeviceID(str[3]);
-					gameTable.setTransactionID(str[4]);
-					gameTable.setGameTime(str[5]);
-					gameTable.setPlayState(str[6]);
-					gameTable.setPlayResult(str[7]);
-					gameTable.setDenom(str[8]);
-					gameTable.setInitialWager(str[9]);
-					gameTable.setInitialWin(str[10]);
-					gameTable.setSecondaryPlayed(str[11]);
-					gameTable.setSecondaryWin(str[12]);
-					gameTable.setFinalWin(str[13]);
-					gameTable.setPaytableId(str[14]);
-					gameTable.setThemeId(str[15]);
-					gameTable.setInitialStartTime(str[16]);
-					gameTable.setInitialPlayerCashableAmount(str[17]);
-					gameTable.setInitialPlayerNonCashableAmount(str[18]);
-					gameTable.setInitialPlayerPromoAmount(str[19]);
-					gameTable.setPlayerCashableAmount(str[20]);
-					gameTable.setPlayerNonCashableAmount(str[21]);
-					gameTable.setPlayerPromoAmount(str[22]);
-					gameTable.setPlayerSessionID(str[23]);
-					gameTable.setPlayerID(str[24]);
+					//gameTable.setVLTID(str[1]);
+					if(str[1].trim().length()==0) {
+						gameTable.setVLTID(vltId);
+					}else
+					{
+						gameTable.setVLTID(str[1]);
+					}
+					gameTable.setCreationDateTime(str[2]);
+					gameTable.setLogSequence(str[3]);
+					gameTable.setDeviceID(str[4]);
+					gameTable.setTransactionID(str[5]);
+					gameTable.setGameTime(str[6]);
+					gameTable.setPlayState(str[7]);
+					gameTable.setPlayResult(str[8]);
+					gameTable.setDenom(str[9]);
+					gameTable.setInitialWager(str[10]);
+					gameTable.setInitialWin(str[11]);
+					gameTable.setSecondaryPlayed(str[12]);
+					gameTable.setSecondaryWin(str[13]);
+					gameTable.setFinalWin(str[14]);
+					gameTable.setPaytableId(str[15]);
+					gameTable.setThemeId(str[16]);
+					gameTable.setInitialStartTime(str[17]);
+					gameTable.setInitialPlayerCashableAmount(str[18]);
+					gameTable.setInitialPlayerNonCashableAmount(str[19]);
+					gameTable.setInitialPlayerPromoAmount(str[20]);
+					gameTable.setPlayerCashableAmount(str[21]);
+					gameTable.setPlayerNonCashableAmount(str[22]);
+					gameTable.setPlayerPromoAmount(str[23]);
+					gameTable.setPlayerSessionID(str[24]);
+					gameTable.setPlayerID(str[25]);
 					FileTest.saveUser(gameTable);
 					System.out.println("Submitted to Database:");
 					gameTable=null;
@@ -65,10 +83,10 @@ public class FileTest {
 					System.out.println("Calling Table Column :2");
 					gameTable = FileTest.getInstance();
 					gameTable.setRecordType(str[0]);
-					gameTable.setValidationID(str[1]);
-					gameTable.setWinLevelIndex(str[2]);
-					gameTable.setWinLevelCombo(str[3]);
-					gameTable.setProgressiveAllowed(str[4]);
+					//gameTable.setValidationID(str[1]);
+					gameTable.setWinLevelIndex(str[1]);
+					gameTable.setWinLevelCombo(str[2]);
+					gameTable.setProgressiveAllowed(str[3]);
 					FileTest.saveUser(gameTable);
 					System.out.println("Submitted to Database:");
 					gameTable=null;
@@ -89,7 +107,13 @@ public class FileTest {
 					System.out.println("Calling Table Column :4");
 					gameTable = FileTest.getInstance();
 					gameTable.setRecordType(str[0]);
-					gameTable.setVLTID(str[1]);
+					//gameTable.setVLTID(str[1]);
+					if(str[1].trim().length()==0) {
+						gameTable.setVLTID(vltId);
+					}else
+					{
+						gameTable.setVLTID(str[1]);
+					}
 					gameTable.setCreationDateTime(str[2]);
 					gameTable.setDeviceID(str[3]);
 					gameTable.setTransactionID(str[4]);
@@ -104,7 +128,13 @@ public class FileTest {
 					System.out.println("Calling Table Column :5");
 					gameTable = FileTest.getInstance();
 					gameTable.setRecordType(str[0]);
-					gameTable.setVLTID(str[1]);
+					//gameTable.setVLTID(str[1]);
+					if(str[1].trim().length()==0) {
+						gameTable.setVLTID(vltId);
+					}else
+					{
+						gameTable.setVLTID(str[1]);
+					}
 					gameTable.setCreationDateTime(str[2]);
 					gameTable.setDeviceID(str[3]);
 					gameTable.setTransactionID(str[4]);

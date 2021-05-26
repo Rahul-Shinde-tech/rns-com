@@ -1,3 +1,419 @@
+
+mysql> select * from gametable;
++------------+--------+----------------------------+-------------+----------+---------------+----------------------------+---------------+--------------+-------+--------------+------------+------------+-----------------+----------------+--------------+----------+------------+---------+------------------+-----------------------------+--------------------------------+--------------------------+----------------------+-------------------------+-------------------+-----------------+----------+---------------+-----------------------------+--------------------+-------------+----------------+-------------+-------------------+------------+---------+-----------------+----------------------------+--------------------+-----------------+------------+----------------------------+-----------+----------+
+| RecordType | VLTID  | CreationDateTime           | LogSequence | DeviceID | TransactionID | GameTime                   | PlayState     | PlayResult   | Denom | InitialWager | FinalWager | InitialWin | SecondaryPlayed | SecondaryWager | SecondaryWin | FinalWin | PaytableId | ThemeId | InitialStartTime | InitialPlayerCashableAmount | InitialPlayerNonCashableAmount | InitialPlayerPromoAmount | PlayerCashableAmount | PlayerNonCashableAmount | PlayerPromoAmount | PlayerSessionID | PlayerID | WinLevelIndex | WinLevelCombo               | ProgressiveAllowed | DeviceClass | CashableAmount | PromoAmount | NonCashableAmount | CurrencyID | DenomID | BaseCashableAmt | NoteDateTime               | ValidationID       | VoucherSequence | VoucherAmt | TransferDateTime           | SessionID | FileName |
++------------+--------+----------------------------+-------------+----------+---------------+----------------------------+---------------+--------------+-------+--------------+------------+------------+-----------------+----------------+--------------+----------+------------+---------+------------------+-----------------------------+--------------------------------+--------------------------+----------------------+-------------------------+-------------------+-----------------+----------+---------------+-----------------------------+--------------------+-------------+----------------+-------------+-------------------+------------+---------+-----------------+----------------------------+--------------------+-----------------+------------+----------------------------+-----------+----------+
+| 4          | 143709 | 2020-12-02-08.33.42.000000 | NULL        | 1        | 3243813       | NULL                       | NULL          | NULL         | NULL  | NULL         | NULL       | NULL       | NULL            | NULL           | NULL         | NULL     | NULL       | NULL    | NULL             | NULL                        | NULL                           | NULL                     | NULL                 | NULL                    | NULL              | NULL            | NULL     | NULL          | NULL                        | NULL               | NULL        | NULL           | NULL        | NULL              | USD        | $5      | $5              | 2020-12-02-08.33.42.000000 | NULL               | NULL            | NULL       | NULL                       | NULL      | NULL     |
+| 4          | 143709 |                            | NULL        | 1        | 3243816       | NULL                       | NULL          | NULL         | NULL  | NULL         | NULL       | NULL       | NULL            | NULL           | NULL         | NULL     | NULL       | NULL    | NULL             | NULL                        | NULL                           | NULL                     | NULL                 | NULL                    | NULL              | NULL            | NULL     | NULL          | NULL                        | NULL               | NULL        | NULL           | NULL        | NULL              | USD        | $5      | $5              | 2020-12-02-08.34.20.000000 | NULL               | NULL            | NULL       | NULL                       | NULL      | NULL     |
+| 5          | 143709 | 2020-12-02-08.33.50.000000 | NULL        | 1        | 3243814       | NULL                       | NULL          | NULL         | NULL  | NULL         | NULL       | NULL       | NULL            | NULL           | NULL         | NULL     | NULL       | NULL    | NULL             | NULL                        | NULL                           | NULL                     | NULL                 | NULL                    | NULL              | NULL            | NULL     | NULL          | NULL                        | NULL               | NULL        | NULL           | NULL        | NULL              | NULL       | NULL    | NULL            | NULL                       | XXXXXXXXXXXXXX1900 | 5640            | $5         | 2020-12-02-08.33.45.000000 | NULL      | NULL     |
+| 1          | 143709 | 2020-12-02-08.34.29.000000 | 3185875     | 18       | 3243817       | 2020-12-02-08.34.29.000000 | G2S_gameEnded | G2S_gameWon  | $0.01 | $0.5         | NULL       | $0.5       | $0.1            | NULL           | $0           | $0       | $0         | $0.1    | GTK_10800A-PS    | GTK_OceanMagic              | 2020-12-02-08.34.27.000000     | $4.5                     | $0                   | $0                      | $4.60             | $0              | $0       | NULL          | NULL                        | NULL               | NULL        | NULL           | NULL        | NULL              | NULL       | NULL    | NULL            | NULL                       | NULL               | NULL            | NULL       | NULL                       | NULL      | NULL     |
+| 2          | NULL   | NULL                       | NULL        | NULL     | NULL          | NULL                       | NULL          | NULL         | NULL  | NULL         | NULL       | NULL       | NULL            | NULL           | NULL         | NULL     | NULL       | NULL    | NULL             | NULL                        | NULL                           | NULL                     | NULL                 | NULL                    | NULL              | NULL            | NULL     | 22            | MainGameWins_3YellowStarfis | false              | NULL        | NULL           | NULL        | NULL              | NULL       | NULL    | NULL            | NULL                       | NULL               | NULL            | NULL       | NULL                       | NULL      | NULL     |
+| 1          | 143709 |                            | 3185876     | 18       | 3243818       | 2020-12-02-08.34.33.000000 | G2S_gameEnded | G2S_gameLost | $0.01 | $0.5         | NULL       | $0.5       | $0              | NULL           | $0           | $0       | $0         | $0      | GTK_10800A-PS    | GTK_OceanMagic              | 2020-12-02-08.34.30.000000     | $4.10                    | $0                   | $0                      | $4.10             | $0              | $0       | NULL          | NULL                        | NULL               | NULL        | NULL           | NULL        | NULL              | NULL       | NULL    | NULL            | NULL                       | NULL               | NULL            | NULL       | NULL                       | NULL      | NULL     |
+| 1          | 143709 |                            | 3185877     | 18       | 3243819       | 2020-12-02-08.34.36.000000 | G2S_gameEnded | G2S_gameLost | $0.01 | $0.5         | NULL       | $0.5       | $0              | NULL           | $0           | $0       | $0         | $0      | GTK_10800A-PS    | GTK_OceanMagic              | 2020-12-02-08.34.33.000000     | $3.6                     | $0                   | $0                      | $3.6              | $0              | $0       | NULL          | NULL                        | NULL               | NULL        | NULL           | NULL        | NULL              | NULL       | NULL    | NULL            | NULL                       | NULL               | NULL            | NULL       | NULL                       | NULL      | NULL     |
+| 1          | 143709 |                            | 3185878     | 18       | 3243820       | 2020-12-02-08.34.39.000000 | G2S_gameEnded | G2S_gameLost | $0.01 | $0.5         | NULL       | $0.5       | $0              | NULL           | $0           | $0       | $0         | $0      | GTK_10800A-PS    | GTK_OceanMagic              | 2020-12-02-08.34.36.000000     | $3.1                     | $0                   | $0                      | $3.1              | $0              | $0       | NULL          | NULL                        | NULL               | NULL        | NULL           | NULL        | NULL              | NULL       | NULL    | NULL            | NULL                       | NULL               | NULL            | NULL       | NULL                       | NULL      | NULL     |
++------------+--------+----------------------------+-------------+----------+---------------+----------------------------+---------------+--------------+-------+--------------+------------+------------+-----------------+----------------+--------------+----------+------------+---------+------------------+-----------------------------+--------------------------------+--------------------------+----------------------+-------------------------+-------------------+-----------------+----------+---------------+-----------------------------+--------------------+-------------+----------------+-------------+-------------------+------------+---------+-----------------+----------------------------+--------------------+-----------------+------------+----------------------------+-----------+----------+
+8 rows in set (0.00 sec)
+
+mysql>
+
+
+countLine:1
+countLine:2
+countLine:3
+countLine:4
+countLine:5
+countLine:6
+My Line First Elemet:4
+
+Calling Table Column :4
+May 26, 2021 12:25:05 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.0.0.Final}
+May 26, 2021 12:25:05 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+May 26, 2021 12:25:05 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+May 26, 2021 12:25:05 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+May 26, 2021 12:25:05 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 26, 2021 12:25:05 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 26, 2021 12:25:05 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 26, 2021 12:25:05 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 26, 2021 12:25:05 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 26, 2021 12:25:06 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 26, 2021 12:25:07 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+May 26, 2021 12:25:07 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 26, 2021 12:25:07 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 26, 2021 12:25:07 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 26, 2021 12:25:07 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 26, 2021 12:25:07 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 26, 2021 12:25:07 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 26, 2021 12:25:07 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Submitted to Database:
+countLine:7
+My Line First Elemet:4
+
+Calling Table Column :4
+May 26, 2021 12:25:07 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 26, 2021 12:25:07 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 26, 2021 12:25:07 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 26, 2021 12:25:07 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 26, 2021 12:25:07 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 26, 2021 12:25:07 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 26, 2021 12:25:07 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Submitted to Database:
+countLine:8
+My Line First Elemet:5
+
+Calling Table Column :5
+May 26, 2021 12:25:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 26, 2021 12:25:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 26, 2021 12:25:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 26, 2021 12:25:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 26, 2021 12:25:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 26, 2021 12:25:08 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 26, 2021 12:25:08 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Submitted to Database:
+countLine:9
+My Line First Elemet:1
+
+Calling Table Column :1
+May 26, 2021 12:25:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 26, 2021 12:25:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 26, 2021 12:25:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 26, 2021 12:25:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 26, 2021 12:25:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 26, 2021 12:25:08 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 26, 2021 12:25:08 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Submitted to Database:
+countLine:10
+My Line First Elemet:2
+
+Calling Table Column :2
+May 26, 2021 12:25:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 26, 2021 12:25:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 26, 2021 12:25:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 26, 2021 12:25:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 26, 2021 12:25:08 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 26, 2021 12:25:08 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 26, 2021 12:25:08 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Submitted to Database:
+countLine:11
+My Line First Elemet:1
+
+Calling Table Column :1
+May 26, 2021 12:25:09 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 26, 2021 12:25:09 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 26, 2021 12:25:09 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 26, 2021 12:25:09 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 26, 2021 12:25:09 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 26, 2021 12:25:09 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 26, 2021 12:25:09 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Submitted to Database:
+countLine:12
+My Line First Elemet:1
+
+Calling Table Column :1
+May 26, 2021 12:25:09 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 26, 2021 12:25:09 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 26, 2021 12:25:09 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 26, 2021 12:25:09 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 26, 2021 12:25:09 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 26, 2021 12:25:09 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 26, 2021 12:25:09 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Submitted to Database:
+countLine:13
+My Line First Elemet:1
+
+Calling Table Column :1
+May 26, 2021 12:25:09 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 26, 2021 12:25:09 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 26, 2021 12:25:09 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 26, 2021 12:25:09 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 26, 2021 12:25:09 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 26, 2021 12:25:09 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 26, 2021 12:25:09 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Submitted to Database:
+File Submitted SuccessFully:
+
+
+
+==============>>><<<=============
+countLine:1
+countLine:2
+countLine:3
+countLine:4
+countLine:5
+countLine:6
+My Line First Elemet:4
+
+Calling Table Column :4
+May 26, 2021 9:16:17 AM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.0.0.Final}
+May 26, 2021 9:16:17 AM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+May 26, 2021 9:16:17 AM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+May 26, 2021 9:16:17 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+May 26, 2021 9:16:18 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 26, 2021 9:16:18 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 26, 2021 9:16:18 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 26, 2021 9:16:18 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 26, 2021 9:16:18 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 26, 2021 9:16:18 AM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 26, 2021 9:16:19 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+May 26, 2021 9:16:19 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 26, 2021 9:16:19 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 26, 2021 9:16:19 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 26, 2021 9:16:19 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 26, 2021 9:16:19 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 26, 2021 9:16:19 AM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 26, 2021 9:16:19 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Submitted to Database:
+countLine:7
+My Line First Elemet:4
+
+Calling Table Column :4
+May 26, 2021 9:16:20 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 26, 2021 9:16:20 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 26, 2021 9:16:20 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 26, 2021 9:16:20 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 26, 2021 9:16:20 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 26, 2021 9:16:20 AM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 26, 2021 9:16:20 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Submitted to Database:
+countLine:8
+My Line First Elemet:5
+
+Calling Table Column :5
+May 26, 2021 9:16:20 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 26, 2021 9:16:20 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 26, 2021 9:16:20 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 26, 2021 9:16:20 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 26, 2021 9:16:20 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 26, 2021 9:16:20 AM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 26, 2021 9:16:20 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Submitted to Database:
+countLine:9
+My Line First Elemet:1
+
+Calling Table Column :1
+May 26, 2021 9:16:21 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 26, 2021 9:16:21 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 26, 2021 9:16:21 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 26, 2021 9:16:21 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 26, 2021 9:16:21 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 26, 2021 9:16:21 AM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 26, 2021 9:16:21 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Submitted to Database:
+countLine:10
+My Line First Elemet:2
+
+Calling Table Column :2
+May 26, 2021 9:16:21 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 26, 2021 9:16:21 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 26, 2021 9:16:21 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 26, 2021 9:16:21 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 26, 2021 9:16:21 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 26, 2021 9:16:21 AM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 26, 2021 9:16:21 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Submitted to Database:
+countLine:11
+My Line First Elemet:1
+
+Calling Table Column :1
+May 26, 2021 9:16:21 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 26, 2021 9:16:21 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 26, 2021 9:16:21 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 26, 2021 9:16:21 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 26, 2021 9:16:21 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 26, 2021 9:16:21 AM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 26, 2021 9:16:21 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Submitted to Database:
+countLine:12
+My Line First Elemet:1
+
+Calling Table Column :1
+May 26, 2021 9:16:22 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 26, 2021 9:16:22 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 26, 2021 9:16:22 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 26, 2021 9:16:22 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 26, 2021 9:16:22 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 26, 2021 9:16:22 AM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 26, 2021 9:16:22 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Submitted to Database:
+countLine:13
+My Line First Elemet:1
+
+Calling Table Column :1
+May 26, 2021 9:16:22 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+May 26, 2021 9:16:22 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/onlinegame]
+May 26, 2021 9:16:22 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+May 26, 2021 9:16:22 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+May 26, 2021 9:16:22 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+May 26, 2021 9:16:22 AM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+May 26, 2021 9:16:22 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Hibernate: insert into GameTable (BaseCashableAmt, CashableAmount, CreationDateTime, CurrencyID, Denom, DenomID, DeviceClass, DeviceID, FileName, FinalWager, FinalWin, GameTime, InitialPlayerCashableAmount, InitialPlayerNonCashableAmount, InitialPlayerPromoAmount, InitialStartTime, InitialWager, InitialWin, LogSequence, NonCashableAmount, NoteDateTime, PaytableId, PlayResult, PlayState, PlayerCashableAmount, PlayerID, PlayerNonCashableAmount, PlayerPromoAmount, PlayerSessionID, ProgressiveAllowed, PromoAmount, SecondaryPlayed, SecondaryWager, SecondaryWin, SessionID, ThemeId, TransactionID, TransferDateTime, VLTID, ValidationID, VoucherAmt, VoucherSequence, WinLevelCombo, WinLevelIndex, RecordType) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Submitted to Database:
+File Submitted SuccessFully:
+mysql> select * from gametable;
++------------+--------+----------------------------+----------------------------+----------+---------------+----------+----------------------------+---------------+--------------+--------------+------------+------------+-----------------+----------------+--------------+----------+------------+---------+------------------+-----------------------------+--------------------------------+----------------------------+----------------------+-------------------------+-------------------+-----------------+----------+-----------------------------+---------------+--------------------+-------------+----------------+-------------+-------------------+------------+---------+-----------------+----------------------------+--------------------+-----------------+------------+----------------------------+-----------+----------+
+| RecordType | VLTID  | CreationDateTime           | LogSequence                | DeviceID | TransactionID | GameTime | PlayState                  | PlayResult    | Denom        | InitialWager | FinalWager | InitialWin | SecondaryPlayed | SecondaryWager | SecondaryWin | FinalWin | PaytableId | ThemeId | InitialStartTime | InitialPlayerCashableAmount | InitialPlayerNonCashableAmount | InitialPlayerPromoAmount   | PlayerCashableAmount | PlayerNonCashableAmount | PlayerPromoAmount | PlayerSessionID | PlayerID | WinLevelIndex               | WinLevelCombo | ProgressiveAllowed | DeviceClass | CashableAmount | PromoAmount | NonCashableAmount | CurrencyID | DenomID | BaseCashableAmt | NoteDateTime               | ValidationID       | VoucherSequence | VoucherAmt | TransferDateTime           | SessionID | FileName |
++------------+--------+----------------------------+----------------------------+----------+---------------+----------+----------------------------+---------------+--------------+--------------+------------+------------+-----------------+----------------+--------------+----------+------------+---------+------------------+-----------------------------+--------------------------------+----------------------------+----------------------+-------------------------+-------------------+-----------------+----------+-----------------------------+---------------+--------------------+-------------+----------------+-------------+-------------------+------------+---------+-----------------+----------------------------+--------------------+-----------------+------------+----------------------------+-----------+----------+
+| 4          | 143709 | 2020-12-02-08.33.42.000000 | NULL                       | 1        | 3243813       | NULL     | NULL                       | NULL          | NULL         | NULL         | NULL       | NULL       | NULL            | NULL           | NULL         | NULL     | NULL       | NULL    | NULL             | NULL                        | NULL                           | NULL                       | NULL                 | NULL                    | NULL              | NULL            | NULL     | NULL                        | NULL          | NULL               | NULL        | NULL           | NULL        | NULL              | USD        | $5      | $5              | 2020-12-02-08.33.42.000000 | NULL               | NULL            | NULL       | NULL                       | NULL      | NULL     |
+| 4          |        |                            | NULL                       | 1        | 3243816       | NULL     | NULL                       | NULL          | NULL         | NULL         | NULL       | NULL       | NULL            | NULL           | NULL         | NULL     | NULL       | NULL    | NULL             | NULL                        | NULL                           | NULL                       | NULL                 | NULL                    | NULL              | NULL            | NULL     | NULL                        | NULL          | NULL               | NULL        | NULL           | NULL        | NULL              | USD        | $5      | $5              | 2020-12-02-08.34.20.000000 | NULL               | NULL            | NULL       | NULL                       | NULL      | NULL     |
+| 5          | 143709 | 2020-12-02-08.33.50.000000 | NULL                       | 1        | 3243814       | NULL     | NULL                       | NULL          | NULL         | NULL         | NULL       | NULL       | NULL            | NULL           | NULL         | NULL     | NULL       | NULL    | NULL             | NULL                        | NULL                           | NULL                       | NULL                 | NULL                    | NULL              | NULL            | NULL     | NULL                        | NULL          | NULL               | NULL        | NULL           | NULL        | NULL              | NULL       | NULL    | NULL            | NULL                       | XXXXXXXXXXXXXX1900 | 5640            | $5         | 2020-12-02-08.33.45.000000 | NULL      | NULL     |
+| 1          | 143709 | NULL                       | 2020-12-02-08.34.29.000000 | 3185875  | 18            | 3243817  | 2020-12-02-08.34.29.000000 | G2S_gameEnded | G2S_gameWon  | $0.01        | NULL       | $0.5       | $0.5            | NULL           | $0.1         | $0       | $0         | $0      | $0.1             | GTK_10800A-PS               | GTK_OceanMagic                 | 2020-12-02-08.34.27.000000 | $4.5                 | $0                      | $0                | $4.60           | $0       | NULL                        | NULL          | NULL               | NULL        | NULL           | NULL        | NULL              | NULL       | NULL    | NULL            | NULL                       | NULL               | NULL            | NULL       | NULL                       | NULL      | NULL     |
+| 2          | NULL   | NULL                       | NULL                       | NULL     | NULL          | NULL     | NULL                       | NULL          | NULL         | NULL         | NULL       | NULL       | NULL            | NULL           | NULL         | NULL     | NULL       | NULL    | NULL             | NULL                        | NULL                           | NULL                       | NULL                 | NULL                    | NULL              | NULL            | NULL     | MainGameWins_3YellowStarfis | false         |                    | NULL        | NULL           | NULL        | NULL              | NULL       | NULL    | NULL            | NULL                       | 22                 | NULL            | NULL       | NULL                       | NULL      | NULL     |
+| 1          |        | NULL                       |                            | 3185876  | 18            | 3243818  | 2020-12-02-08.34.33.000000 | G2S_gameEnded | G2S_gameLost | $0.01        | NULL       | $0.5       | $0.5            | NULL           | $0           | $0       | $0         | $0      | $0               | GTK_10800A-PS               | GTK_OceanMagic                 | 2020-12-02-08.34.30.000000 | $4.10                | $0                      | $0                | $4.10           | $0       | NULL                        | NULL          | NULL               | NULL        | NULL           | NULL        | NULL              | NULL       | NULL    | NULL            | NULL                       | NULL               | NULL            | NULL       | NULL                       | NULL      | NULL     |
+| 1          |        | NULL                       |                            | 3185877  | 18            | 3243819  | 2020-12-02-08.34.36.000000 | G2S_gameEnded | G2S_gameLost | $0.01        | NULL       | $0.5       | $0.5            | NULL           | $0           | $0       | $0         | $0      | $0               | GTK_10800A-PS               | GTK_OceanMagic                 | 2020-12-02-08.34.33.000000 | $3.6                 | $0                      | $0                | $3.6            | $0       | NULL                        | NULL          | NULL               | NULL        | NULL           | NULL        | NULL              | NULL       | NULL    | NULL            | NULL                       | NULL               | NULL            | NULL       | NULL                       | NULL      | NULL     |
+| 1          |        | NULL                       |                            | 3185878  | 18            | 3243820  | 2020-12-02-08.34.39.000000 | G2S_gameEnded | G2S_gameLost | $0.01        | NULL       | $0.5       | $0.5            | NULL           | $0           | $0       | $0         | $0      | $0               | GTK_10800A-PS               | GTK_OceanMagic                 | 2020-12-02-08.34.36.000000 | $3.1                 | $0                      | $0                | $3.1            | $0       | NULL                        | NULL          | NULL               | NULL        | NULL           | NULL        | NULL              | NULL       | NULL    | NULL            | NULL                       | NULL               | NULL            | NULL       | NULL                       | NULL      | NULL     |
++------------+--------+----------------------------+----------------------------+----------+---------------+----------+----------------------------+---------------+--------------+--------------+------------+------------+-----------------+----------------+--------------+----------+------------+---------+------------------+-----------------------------+--------------------------------+----------------------------+----------------------+-------------------------+-------------------+-----------------+----------+-----------------------------+---------------+--------------------+-------------+----------------+-------------+-------------------+------------+---------+-----------------+----------------------------+--------------------+-----------------+------------+----------------------------+-----------+----------+
+8 rows in set (0.00 sec)
+
+mysql>
+=============================>>>>>><<<<<<<<<<<===============================
 countLine:1
 countLine:2
 countLine:3
