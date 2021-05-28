@@ -1,0 +1,16 @@
+Task #3 : 
+
+> Prepare a Cricket Board
+
+	> Total number of Overs  = 5 (1 over = 6 balls - 30 balls) (Runs = 0,1,2,3,4,6, wd,nb,w)
+
+> Team1   vs  Team2 : 
+
+Show score boards for each team like below :
+
+	> Total Runs 
+	> Total Wickets
+	> Runrate per over
+	> Runs required to Win
+
+> Final Result : (Winner team)

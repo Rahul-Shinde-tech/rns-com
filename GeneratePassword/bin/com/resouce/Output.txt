@@ -1,0 +1,26 @@
+<<CASE:1>>
+Enter Length for Password generation between 6 to 10:
+Length:10,Strength:1
+Enter Strength for Password between 1 2 3 :
+uMhExjVZGR
+eQoOaZkUlk
+kRdLhxuKFQ
+
+<<CASE:2>>
+Enter Length for Password generation between 6 to 10:
+Length:10,Strength:2
+Enter Strength for Password between 1 2 3 :
+dQk5udc88f
+dDr48TZMTx
+tCf7DA4JQd
+
+
+
+<<CASE:3>>
+
+Enter Length for Password generation between 6 to 10:
+Length:10,Strength:3
+Enter Strength for Password between 1 2 3 :
+hX#1(A78Ro
+hH@8twUT[7
+oV(6Mf[M52
