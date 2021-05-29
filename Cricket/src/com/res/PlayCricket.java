@@ -1,21 +1,15 @@
 package com.res;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 public class PlayCricket {
 
 	static PlayCricket crInstance = null;
-	private final int TOTALPLAYERS = 11;
 
 	public static void main(String[] args) {
 		int countInn = 0;
 		int countTeam = 2;
-		String teamName1;
-		String teamName2;
-
-		crInstance.getInstance();
+	
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the Two team Name:");
 		String teamName;
@@ -30,10 +24,10 @@ public class PlayCricket {
 
 			} else {
 				if (countTeam == 2) {
-					teamName1 = teamName;
+					String teamName1 = teamName;
 					countTeam--;
 				} else if (countTeam == 1) {
-					teamName2 = teamName;
+					String teamName2 = teamName;
 					countTeam--;
 					System.out.println("Two Teams are Enrolled:");
 					System.out.println("Please enter the number of overs:");
@@ -44,8 +38,6 @@ public class PlayCricket {
 						for (int inn = 0; inn < 2; inn++) {
 
 							if (totalOver > 0) {
-								// String[] str=null;
-								// Map<Integer, String> map= new LinkedHashMap<Integer, String>();
 								if (countInn <= 0) {
 									System.out.println("Inning 1 Started:");
 									for (int i = 0; i < 1; i++) {
@@ -62,7 +54,7 @@ public class PlayCricket {
 										PlayUtil.getOverRecord1(totalOver);
 										
 									}
-									System.out.println("Second Innings of Second Team is Completed :");
+
 								} else if (countInn > 1) {
 									System.out.println("Both the Innings are Over:");
 									System.out.println("Result will Be:");
@@ -72,15 +64,10 @@ public class PlayCricket {
 
 							}
 						}
-						/*
-						 * if (totalOver>0) {
-						 * 
-						 * }else { System.out.println(" Enrolled Over should be greater than zero!"); }
-						 */
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
-
+					scan.close();
 				}
 
 			}
@@ -90,11 +77,5 @@ public class PlayCricket {
 
 	}
 
-	public static PlayCricket getInstance() {
-		if (crInstance == null) {
-			crInstance = new PlayCricket();
-		}
-		return crInstance;
-	}
 
 }
