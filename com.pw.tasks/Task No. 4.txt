@@ -1,0 +1,16 @@
+T4 :  Design an application - Airport Related 
+
+DB - Names of planes - country wise Eg. - AirIndia - India, GoIndigo - Chiana, Pan Asia - Malesiya, Kingfisher - India 
+
+		- Plane id
+		- Fixed time of Departure and Arrival
+		- Source and Destination
+		
+JAVA -  Want to see the below details of plane by id/name -> (default 1)  1.for 1 day  2. for whole week 
+
+		- Takeoff 
+		- Landing
+		- Total duration of fly time
+		- Idle time of plane on airport
+
+NOTE - Use Time - not int/long
