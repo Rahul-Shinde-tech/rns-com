@@ -1,0 +1,67 @@
+Collection - Collection is an framework introduced in java 1.2 
+- A group of individual object which represent a single unit
+- Collection is an Interface 
+- hashcode, equals, toString, Iterator, add, AddAll, remove removeAll contains, containsAll, clear, isEmpty, size, toArray
+
+Iterable - is an Interface 
+-  hasNext, next, remove 
+
+List - List is an Interface - Introduced in java 1.2 
+- sublist, get(), Set(), indexOf(), LastIndexOf(), 
+- it also contains methods of collection which are as follow 
+- add addAll contains containsAll remove removeAll hashcode equals, isEmpty, size, toArray, toString, iterator, clear 
+- nulls allowed
+- duplicate values  are allowed 
+- Insersion order - preserved 
+- ListIterator Iterator 
+- Array and DLL
+
+Queue - Queue is an Iterface introduced in java 1.5
+- null not allowed 
+- values duplicate allowed 
+- Insersion oreder preserved 
+- Iterator 
+
+Set - Set is an Iterface introduced in java 1.2 
+- null only once 
+- duplicate not allowed 
+- order not preserved 
+- Iterator 
+
+LinkedList
+- is a class introduced in 1.2 
+- add addAll addFirst AddLast remove removeAll removeFirst removeLast contains containsAll containsFirst containsLast 
+-getFirst getLast setFirst setLast peek peekFirst peekLast push pop 
+- offer offerFirst Offerfirst offerLast poll pollFisrt pollLast
+- subList toArray toString equals hashcode size clear isEMpty iterator indexOf LastIndexOf 
+- order preserved - nodes or bucket - ListIterator - Iterator 
+- null allowed - duplicates allowed 
+- Array DLL 
+
+ArrayList  is a class introduced 1.2 
+- intial Capacity 0
+- threshold loadfactor 50%
+- initial increment 10 
+- array 
+- ensureCapacity removeRange tripToSize
+- duplicates are allowed 
+- nulls are allowed 
+- order preserved 
+
+vector - is a class introduced in 1.0 legacy 
+- intial Capacity 10
+- threshold loadfactor 100%
+- initial increment 20 
+- array 
+- ensureCapacity removeRange tripToSize
+- duplicates are allowed 
+- nulls are allowed 
+- order preserved 
+- elementAt Firstelement Lastelement removeelementAt setelementAt InsertelementAt
+- thread safe cause all methods are synchronied 
+
+Legacy  = vector stack dictionery hashtable properties 
+ 
+
+
+

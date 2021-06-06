@@ -1,0 +1,66 @@
+OOP's
+Class : Class is a BluePrint of Object 
+Object : It is a Instance of a class. It having its own state and behaviour 
+Encapsulation : Wrapping of a Code and data into Single Unit 
+Abstration : hiding the implementation details and showing the essential things 
+process Abstration Data Abstration
+
+PolyMorphism - The ability to provide same form can be utilised differently 
+Runtime PolyMorphism / Late Binding / Dynamic Binding / Overriding 
+Compiletime PolyMorphism/ Early Bindling / static Bindling / Oveloading 
+Inheritance - one class can aquire the property of another class 
+Single Inheritance, Multilevel inheritence, Multiple Inheritance, Hierachical Inheritance
+
+Method Overloading
+1. Same method name with different argument signature can be utilised differently within a class 
+Rules:
+A. Within a class
+B. No rule for Access Modifier
+C. No rule for Non Access Modifier 
+D. No rule for return type
+E. Method Name must be same 
+F. Arguments must be differ in following 3 ways 
+	- Number of Arguments 
+	- Type of Arguments 
+	- Sequence of Arguments 
+G. No rule for Exception handling 
+
+Method Overriding
+1. Same method and argument signature can be utilised with different implementation in omre than one class 
+Rules:
+A. More than one class 
+B. Method Name and Argument signature must be same 
+c. Access Modifier - Widdening access 
+D. Non Access Modifier - final static volitile and transient are not allowed 
+E. return type : Upto the java 1.4 return type must be the same after java 1.5 there is COVARANT return type 
+	Covarient return type is only applicable for Object level 
+F. Exception Handling : 
+	Overriden 		Override
+	No Exception 	same, any unchecked, No checked 
+	checked Exc 	same, child, any unchecked exception
+	unchecked Exc 	same, child, Blank, No checked exception
+
+Constructor - COnstructor are used to initialised newly created objects 
+	- parameterised constructor, default constructor, No arg Constructor 
+
+Exception - Exception is an unwanted events occured during normal flow of a Application and application terminates abnormly
+- try catch finally throws throw 
+Exception Handling - Exception Handling is a Mechanism to handle the exception for normal flow of a application
+Checked Exception - The Checked Exceptions are predifined exception by Compiler, Compiler will notify this exception during compile time but Checked exception can occurs at runtime 
+- IOEception, SQLException, FileNotFoundException, IturrptedIOException, 
+Error : Error is nothing but System failure or the fault that can not be recover 
+unchecked Excetion : The exception is not predified by compiler and occure at runtime. This kind of exception is occures due to programmers mistake during application
+- Runtime Exception & Errors IndexOutOfBound, Classcast Exception, Null Pointer Exception, Arithmatic Exeption
+  
+Garbase Collection : garbase collection is called by JVM to remove unwanted unrefferenced objects from heap area 
+
+Methods of String -\
+CharAt, codePointAt, Concat, toString, compareTo, contains, ContainsEquals, equals, EqualsIgnoreCase, 
+intern, isEmpty, lastIndexof, FirstIndexof, length, replace replaceAll substring, toCharArray, toLowerCase,toUpperCase, split, subSequence 
+
+Methods for StringBuffer and StringBuilders are 
+append, insert, delete, replace, reverse, subsequence, substring, capacity, getchar, setCharAt, SetLength 
+
+
+
+

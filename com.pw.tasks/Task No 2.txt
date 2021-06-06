@@ -1,0 +1,13 @@
+scenario : I want to generate password : 
+
+ public String generatePassword(int lenght, int strength)
+ {
+		// logic
+ }
+ 
+ Strength : 
+	> 1 - alphabet 
+	> 2 - alphanumeric 
+	> 3 - alphabet + alphanumeric + special characters(allowed special chcaracters = !@#%*$[](){} )
+	
+ lenght : minimum : 4  maximum : 10

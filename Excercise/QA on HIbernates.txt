@@ -1,0 +1,11 @@
+
+Q. Why SessionFactory is a HeavyWeigth Object?
+==>> Session factory objects are to be implemented using the singleton design pattern. 
+Instances of SessionFactory are thread-safe and typically shared throughout an application. 
+As these objects are heavy weight because they contains the connection information, hibernate 
+configuration information and mapping files,location path. So creating number of instances will
+ make our application heavy weight. But the session objects are not thread safe. So in short 
+ it is - SessionFactory objects are one per application and Session objects are one per client.
+
+Q. Whats are the 3 stages of Persistent Objects ?
+==>>
