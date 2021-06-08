@@ -1,42 +1,46 @@
-package org.test;
+package org.rns;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.File;
+import java.util.Scanner;
 
 import org.hibernate.Session;
 
-public class FileTest {
+public class NewFile {
 	static GameTable gameTable = null;
 	static String vltId = "ABC";
-	
+
 	public static void FileInput(String fileUrl) throws Exception {
-		FileReader fr = new FileReader(fileUrl);
-		BufferedReader br = new BufferedReader(fr);
+		// FileReader fr = new FileReader(fileUrl);
+		File file = new File(fileUrl);
+		// BufferedReader br = new BufferedReader(fr);
+		Scanner scanner = new Scanner(file);
 		int countLine = 0;
-		//int n =2000;
+		// int n =2000;
 		String s;
 		String[] str1 = new String[50];
-		while ((s=br.readLine()).length() > 0 ) {
-		//while ((s=br.readLine())!=0 ) {	
+		while (scanner.hasNext()) {
+			s = scanner.nextLine();
+			//if("")
+			// while ((s=br.readLine()).length() > 0 ) {
+			// while ((s=br.readLine())!=0 ) {
 			countLine += 1;
 			System.out.println("countLine:" + countLine);
 			if (countLine >= 6 && s.trim().length() != 0) {
 				String[] str = SingleLine(s);
-					
-				 if(str[1].trim().length()!=0 &&( !"2".equals(str[0]))) {
-					 vltId=str[1];
-				 }
+
+				if (str[1].trim().length() != 0 && (!"2".equals(str[0]))) {
+					vltId = str[1];
+				}
 				System.out.println("My Line First Elemet:" + str[0]);
 				System.out.println();
 				if ("1".equals(str[0])) {
 					System.out.println("Calling Table Column :1");
 					gameTable = FileTest.getInstance();
 					gameTable.setRecordType(str[0]);
-					//gameTable.setVLTID(str[1]);
-					if(str[1].trim().length()==0) {
+					// gameTable.setVLTID(str[1]);
+					if (str[1].trim().length() == 0) {
 						gameTable.setVLTID(vltId);
-					}else
-					{
+					} else {
 						gameTable.setVLTID(str[1]);
 					}
 					gameTable.setCreationDateTime(str[2]);
@@ -65,7 +69,7 @@ public class FileTest {
 					gameTable.setPlayerID(str[25]);
 					FileTest.saveUser(gameTable);
 					System.out.println("Submitted to Database:");
-					gameTable=null;
+					gameTable = null;
 				} else if ("2".equals(str[0])) {
 					System.out.println("Calling Table Column :2");
 					gameTable = FileTest.getInstance();
@@ -75,7 +79,7 @@ public class FileTest {
 					gameTable.setProgressiveAllowed(str[3]);
 					FileTest.saveUser(gameTable);
 					System.out.println("Submitted to Database:");
-					gameTable=null;
+					gameTable = null;
 				} else if ("3".equals(str[0])) {
 					System.out.println("Calling Table Column :3");
 					gameTable = FileTest.getInstance();
@@ -88,15 +92,14 @@ public class FileTest {
 					gameTable.setNonCashableAmount(str[6]);
 					FileTest.saveUser(gameTable);
 					System.out.println("Submitted to Database:");
-					gameTable=null;
+					gameTable = null;
 				} else if ("4".equals(str[0])) {
 					System.out.println("Calling Table Column :4");
 					gameTable = FileTest.getInstance();
 					gameTable.setRecordType(str[0]);
-					if(str[1].trim().length()==0) {
+					if (str[1].trim().length() == 0) {
 						gameTable.setVLTID(vltId);
-					}else
-					{
+					} else {
 						gameTable.setVLTID(str[1]);
 					}
 					gameTable.setCreationDateTime(str[2]);
@@ -108,15 +111,14 @@ public class FileTest {
 					gameTable.setNoteDateTime(str[8]);
 					FileTest.saveUser(gameTable);
 					System.out.println("Submitted to Database:");
-					gameTable=null;
+					gameTable = null;
 				} else if ("5".equals(str[0])) {
 					System.out.println("Calling Table Column :5");
 					gameTable = FileTest.getInstance();
 					gameTable.setRecordType(str[0]);
-					if(str[1].trim().length()==0) {
+					if (str[1].trim().length() == 0) {
 						gameTable.setVLTID(vltId);
-					}else
-					{
+					} else {
 						gameTable.setVLTID(str[1]);
 					}
 					gameTable.setCreationDateTime(str[2]);
@@ -127,24 +129,25 @@ public class FileTest {
 					gameTable.setVoucherAmt(str[7]);
 					gameTable.setTransferDateTime(str[8]);
 					FileTest.saveUser(gameTable);
-					
+
 					System.out.println("Submitted to Database:");
-					gameTable=null;
-				}else if ("5".equals(str[0]) || str[0].trim().length()!=0){
+					gameTable = null;
+				} else if ("5".equals(str[0]) || str[0].trim().length() != 0) {
 					break;
 				}
-			}else
-			{
+			}else {
 				System.out.println("Blank Line:");
 			}
-			/*} else {
-                break;
-            }*/
+			//nextLine=null;
+			s=null;
+			/*
+			 * } else { break; }
+			 */
 		}
-		br.close();
-		fr.close();
-		gameTable=null;
-		
+		// file.;
+		scanner.close();
+		gameTable = null;
+
 	}
 
 	public static GameTable getInstance() {
@@ -172,18 +175,17 @@ public class FileTest {
 	}
 
 	public static void saveUser(GameTable gameTable) {
-		try (Session session= HibernateUtil.getSession()) {
+		try (Session session = HibernateUtil.getSession()) {
 			session.beginTransaction();
 			session.save(gameTable);
-			
+
 			session.getTransaction().commit();
-			
+			session.clear();
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
-		finally {
+		}finally {
 			HibernateUtil.getSession().close();
 		}
-		
+
 	}
 }

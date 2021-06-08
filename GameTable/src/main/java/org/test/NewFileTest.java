@@ -180,9 +180,11 @@ public class NewFileTest {
 			session.save(gameTable);
 
 			session.getTransaction().commit();
-
+			session.clear();
 		} catch (Exception e) {
 			e.printStackTrace();
+		}finally {
+			HibernateUtil.getSession().close();
 		}
 
 	}

@@ -1,4 +1,4 @@
-package org.test;
+package org.rns;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -8,7 +8,7 @@ import org.hibernate.Session;
 public class FileTest {
 	static GameTable gameTable = null;
 	static String vltId = "ABC";
-	
+	private static Session session = null;
 	public static void FileInput(String fileUrl) throws Exception {
 		FileReader fr = new FileReader(fileUrl);
 		BufferedReader br = new BufferedReader(fr);
@@ -172,7 +172,8 @@ public class FileTest {
 	}
 
 	public static void saveUser(GameTable gameTable) {
-		try (Session session= HibernateUtil.getSession()) {
+		try {
+			session =HibernateUtil.getSession();
 			session.beginTransaction();
 			session.save(gameTable);
 			
@@ -181,9 +182,7 @@ public class FileTest {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		finally {
-			HibernateUtil.getSession().close();
-		}
+		
 		
 	}
 }
