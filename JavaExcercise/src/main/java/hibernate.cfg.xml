@@ -9,15 +9,27 @@
 		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernateadmin</property>
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password">root</property>
-		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.hbm2ddl.auto">create</property>
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
 		<property name="hibernate.show_sql">true</property>
 		<!-- <mapping class="com.resource.Student"/> -->
 		<!--  <mapping class="com.embeddeding.Student"/> -->
 		<!--  <mapping class="com.OneToOne.Question"/>-->
 		<!-- <mapping class="com.OneToOne.Answer"/> -->
-		<mapping class ="com.ManyToOne.Question"/>
-		<mapping class = "com.ManyToOne.Answer"/>
+		<!--  <mapping class ="com.ManyToOne.Question"/>-->
+		<!-- <mapping class = "com.ManyToOne.Answer"/>-->
+		<!-- <mapping class="com.TPH.Employee"/>-->
+		<!-- <mapping class="com.TPH.RegularEmployee"/>-->
+		<!-- <mapping class="com.TPH.ContractEmployee"/>-->
+		<!-- <mapping class="com.TPC.EmployeeDetails"/>  --> 
+		<!-- <mapping class="com.TPC.RegularEmployeeDet"/> --> 
+		<!-- <mapping class="com.TPC.ContractEmployeeDet"/> --> 
+		<!-- 	<mapping class="com.TPS.EmployeeInfo"/> -->
+		<!-- <mapping class="com.TPS.RegularEmployeeInfo"/> -->
+		<!-- <mapping class="com.TPS.ContractEmployeeInfo"/>  -->
+	
+		<mapping class="com.ManyTo.Many.Employee"/>
+		<mapping class="com.ManyTo.Many.Project"/>
 		
 	</session-factory>
 	

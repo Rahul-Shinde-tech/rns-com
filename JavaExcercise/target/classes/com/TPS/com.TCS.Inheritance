@@ -1,0 +1,89 @@
+---:: OUTPUT ::---
+
+mysql> select * from employeeinfo;
++------------+--------------+
+| EmployeeId | Employeename |
++------------+--------------+
+|          1 | Sachin       |
+|          2 | Virat        |
+|          3 | Sourav       |
++------------+--------------+
+3 rows in set (0.01 sec)
+
+mysql> select * from regularemployeeinfo;
++-------+--------+-------+
+| bonus | salary | EmpId |
++-------+--------+-------+
+|  2000 |  20000 |     2 |
++-------+--------+-------+
+1 row in set (0.00 sec)
+
+mysql> select * from contractemployeeinfo;
++----------+----------+-------+
+| duration | salPerHr | EmpId |
++----------+----------+-------+
+|       12 |       10 |     3 |
++----------+----------+-------+
+1 row in set (0.00 sec)
+
+
+Jun 10, 2021 7:39:12 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.0.12.Final}
+Jun 10, 2021 7:39:12 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+Jun 10, 2021 7:39:12 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+Jun 10, 2021 7:39:12 PM org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver resolveEntity
+WARN: HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+Jun 10, 2021 7:39:12 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+Jun 10, 2021 7:39:13 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Jun 10, 2021 7:39:13 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [null] at URL [jdbc:mysql://localhost:3306/hibernateadmin]
+Jun 10, 2021 7:39:13 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {user=root, password=****, driver=com.mysql.jdbc.Driver}
+Jun 10, 2021 7:39:13 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Jun 10, 2021 7:39:13 PM org.hibernate.engine.jdbc.connections.internal.PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+Thu Jun 10 19:39:13 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Jun 10, 2021 7:39:15 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Jun 10, 2021 7:39:16 PM org.hibernate.tool.hbm2ddl.SchemaExport execute
+INFO: HHH000227: Running hbm2ddl schema export
+Hibernate: alter table ContractEmployeeInfo drop foreign key FKmtmnnuio8vgt2mxckf1lnknm4
+Jun 10, 2021 7:39:16 PM org.hibernate.tool.hbm2ddl.SchemaExport perform
+ERROR: HHH000389: Unsuccessful: alter table ContractEmployeeInfo drop foreign key FKmtmnnuio8vgt2mxckf1lnknm4
+Jun 10, 2021 7:39:16 PM org.hibernate.tool.hbm2ddl.SchemaExport perform
+ERROR: Table 'hibernateadmin.contractemployeeinfo' doesn't exist
+Hibernate: alter table RegularEmployeeInfo drop foreign key FK343fige7iey3xu2en4s8n3coc
+Jun 10, 2021 7:39:16 PM org.hibernate.tool.hbm2ddl.SchemaExport perform
+ERROR: HHH000389: Unsuccessful: alter table RegularEmployeeInfo drop foreign key FK343fige7iey3xu2en4s8n3coc
+Jun 10, 2021 7:39:16 PM org.hibernate.tool.hbm2ddl.SchemaExport perform
+ERROR: Table 'hibernateadmin.regularemployeeinfo' doesn't exist
+Hibernate: drop table if exists ContractEmployeeInfo
+Hibernate: drop table if exists EmployeeInfo
+Hibernate: drop table if exists hibernate_sequence
+Hibernate: drop table if exists RegularEmployeeInfo
+Hibernate: create table ContractEmployeeInfo (duration integer, salPerHr integer, EmpId integer not null, primary key (EmpId))
+Hibernate: create table EmployeeInfo (EmployeeId integer not null, Employeename varchar(255), primary key (EmployeeId))
+Hibernate: create table hibernate_sequence (next_val bigint)
+Hibernate: insert into hibernate_sequence values ( 1 )
+Hibernate: create table RegularEmployeeInfo (bonus integer, salary integer, EmpId integer not null, primary key (EmpId))
+Hibernate: alter table ContractEmployeeInfo add constraint FKmtmnnuio8vgt2mxckf1lnknm4 foreign key (EmpId) references EmployeeInfo (EmployeeId)
+Hibernate: alter table RegularEmployeeInfo add constraint FK343fige7iey3xu2en4s8n3coc foreign key (EmpId) references EmployeeInfo (EmployeeId)
+Jun 10, 2021 7:39:19 PM org.hibernate.tool.hbm2ddl.SchemaExport execute
+INFO: HHH000230: Schema export complete
+Thu Jun 10 19:39:19 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: insert into EmployeeInfo (Employeename, EmployeeId) values (?, ?)
+Hibernate: insert into EmployeeInfo (Employeename, EmployeeId) values (?, ?)
+Hibernate: insert into RegularEmployeeInfo (bonus, salary, EmpId) values (?, ?, ?)
+Hibernate: insert into EmployeeInfo (Employeename, EmployeeId) values (?, ?)
+Hibernate: insert into ContractEmployeeInfo (duration, salPerHr, EmpId) values (?, ?, ?)

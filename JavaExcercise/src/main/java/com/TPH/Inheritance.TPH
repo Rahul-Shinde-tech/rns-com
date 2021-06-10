@@ -1,0 +1,58 @@
+---:: OUTPUT ::---
+
+mysql> select * from employee;
++------------------+------------+----------+-------+--------+------------------+------------+
+| TypeOfEmployee   | EmployeeId | eName    | bonus | salary | contractDuration | payPerHour |
++------------------+------------+----------+-------+--------+------------------+------------+
+| Employee         |          1 | Sachin   |  NULL |   NULL |             NULL |       NULL |
+| Employee         |          2 | Virat    |  NULL |   NULL |             NULL |       NULL |
+| ContractEmployee |          3 | Rohit    |  NULL |   NULL |               12 |        200 |
+| RegularEmployee  |          4 | Virendra |  1200 |  10000 |             NULL |       NULL |
++------------------+------------+----------+-------+--------+------------------+------------+
+4 rows in set (0.00 sec)
+
+Jun 10, 2021 6:22:47 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.0.12.Final}
+Jun 10, 2021 6:22:47 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+Jun 10, 2021 6:22:47 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+Jun 10, 2021 6:22:47 PM org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver resolveEntity
+WARN: HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+Jun 10, 2021 6:22:48 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+Jun 10, 2021 6:22:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Jun 10, 2021 6:22:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [null] at URL [jdbc:mysql://localhost:3306/hibernateadmin]
+Jun 10, 2021 6:22:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {user=root, password=****, driver=com.mysql.jdbc.Driver}
+Jun 10, 2021 6:22:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Jun 10, 2021 6:22:48 PM org.hibernate.engine.jdbc.connections.internal.PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+Thu Jun 10 18:22:48 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Jun 10, 2021 6:22:51 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Jun 10, 2021 6:22:52 PM org.hibernate.tool.hbm2ddl.SchemaExport execute
+INFO: HHH000227: Running hbm2ddl schema export
+Hibernate: drop table if exists Employee
+Hibernate: drop table if exists hibernate_sequence
+Hibernate: create table Employee (TypeOfEmployee varchar(31) not null, EmployeeId integer not null, eName varchar(255), bonus integer, salary integer, contractDuration integer, payPerHour integer, primary key (EmployeeId))
+Hibernate: create table hibernate_sequence (next_val bigint)
+Hibernate: insert into hibernate_sequence values ( 1 )
+Jun 10, 2021 6:22:53 PM org.hibernate.tool.hbm2ddl.SchemaExport execute
+INFO: HHH000230: Schema export complete
+Thu Jun 10 18:22:53 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from hibernate_sequence for update
+Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+Hibernate: insert into Employee (eName, TypeOfEmployee, EmployeeId) values (?, 'Employee', ?)
+Hibernate: insert into Employee (eName, TypeOfEmployee, EmployeeId) values (?, 'Employee', ?)
+Hibernate: insert into Employee (eName, contractDuration, payPerHour, TypeOfEmployee, EmployeeId) values (?, ?, ?, 'ContractEmployee', ?)
+Hibernate: insert into Employee (eName, bonus, salary, TypeOfEmployee, EmployeeId) values (?, ?, ?, 'RegularEmployee', ?)
