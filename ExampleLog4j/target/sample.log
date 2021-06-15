@@ -1,0 +1,79 @@
+2021-06-14 20:48:30 DEBUG Sample debug message
+2021-06-14 20:48:30 INFO  Sample info message
+2021-06-14 20:49:03 DEBUG Sample debug message
+2021-06-14 20:49:03 INFO  Sample info message
+2021-06-14 20:49:15 DEBUG Sample debug message
+2021-06-14 20:49:15 INFO  Sample info message
+2021-06-15 12:00:39 INFO  Project Started :
+2021-06-15 12:05:28 INFO  Project Started :
+2021-06-15 12:05:28 INFO  Started saving Customer Details:
+2021-06-15 12:05:28 INFO  Session Opened:
+2021-06-15 12:05:28 INFO  Configured Suceessfully:
+2021-06-15 12:05:37 INFO  New Customer Saved
+2021-06-15 12:09:02 INFO  Project Started :
+2021-06-15 12:09:02 INFO  Started saving Customer Details:
+2021-06-15 12:09:02 INFO  Session Opened:
+2021-06-15 12:09:02 INFO  Configured Suceessfully:
+2021-06-15 12:09:09 INFO  New Customer Saved
+2021-06-15 12:09:09 INFO  Session Opened:
+2021-06-15 12:09:09 INFO  Configured Suceessfully:
+2021-06-15 12:09:13 INFO  New Customer Saved
+2021-06-15 12:09:13 INFO  Session Opened:
+2021-06-15 12:09:13 INFO  Configured Suceessfully:
+2021-06-15 12:09:16 INFO  New Customer Saved
+2021-06-15 12:09:16 INFO  Started Saving Orders:
+2021-06-15 12:09:16 INFO  Session Opened:
+2021-06-15 12:09:16 INFO  Configured Suceessfully:
+2021-06-15 12:09:20 INFO  New Order Saved
+2021-06-15 12:09:20 INFO  Session Opened:
+2021-06-15 12:09:20 INFO  Configured Suceessfully:
+2021-06-15 12:09:24 INFO  New Order Saved
+2021-06-15 12:09:24 INFO  Session Opened:
+2021-06-15 12:09:24 INFO  Configured Suceessfully:
+2021-06-15 12:09:28 INFO  New Order Saved
+2021-06-15 12:09:28 INFO  Session Opened:
+2021-06-15 12:09:28 INFO  Configured Suceessfully:
+2021-06-15 12:09:32 INFO  New Order Saved
+2021-06-15 12:09:32 INFO  Sucessful..
+2021-06-15 12:13:09 INFO  Project Started :
+2021-06-15 12:13:09 INFO  Started saving Customer Details:
+2021-06-15 12:13:09 INFO  Session Opened:
+2021-06-15 12:13:09 INFO  Configured Suceessfully:
+2021-06-15 12:13:17 INFO  New Customer Saved
+2021-06-15 12:13:17 INFO  Session Opened:
+2021-06-15 12:13:17 INFO  Configured Suceessfully:
+2021-06-15 12:13:21 INFO  New Customer Saved
+2021-06-15 12:13:21 INFO  Session Opened:
+2021-06-15 12:13:21 INFO  Configured Suceessfully:
+2021-06-15 12:13:24 INFO  New Customer Saved
+2021-06-15 12:13:24 INFO  Started Saving Orders:
+2021-06-15 12:13:24 INFO  Session Opened:
+2021-06-15 12:13:24 INFO  Configured Suceessfully:
+2021-06-15 12:13:28 INFO  New Order Saved
+2021-06-15 12:13:28 INFO  Session Opened:
+2021-06-15 12:13:28 INFO  Configured Suceessfully:
+2021-06-15 12:13:32 INFO  New Order Saved
+2021-06-15 12:13:32 INFO  Session Opened:
+2021-06-15 12:13:32 INFO  Configured Suceessfully:
+2021-06-15 12:13:36 INFO  New Order Saved
+2021-06-15 12:13:36 INFO  Session Opened:
+2021-06-15 12:13:36 INFO  Configured Suceessfully:
+2021-06-15 12:13:39 INFO  New Order Saved
+2021-06-15 12:13:40 INFO  Sucessful..
+2021-06-15 12:19:39 INFO  Project Started :
+2021-06-15 12:19:39 INFO  Started saving Customer Details:
+2021-06-15 12:19:39 INFO  Session Opened:
+2021-06-15 12:19:39 INFO  Configured Suceessfully:
+2021-06-15 12:24:45 INFO  Project Started :
+2021-06-15 12:24:45 INFO  Started saving Customer Details:
+2021-06-15 12:24:45 INFO  Session Opened:
+2021-06-15 12:24:45 INFO  Configured Suceessfully:
+2021-06-15 12:24:53 INFO  New Customer Saved
+2021-06-15 12:24:53 INFO  New Customer Saved
+2021-06-15 12:24:53 INFO  New Customer Saved
+2021-06-15 12:24:53 INFO  Started Saving Orders:
+2021-06-15 12:24:53 INFO  New Order Saved
+2021-06-15 12:24:53 INFO  New Order Saved
+2021-06-15 12:24:53 INFO  New Order Saved
+2021-06-15 12:24:53 INFO  New Order Saved
+2021-06-15 12:24:54 INFO  Sucessful..
