@@ -1,0 +1,27 @@
+.container {
+	width: 50%;
+	border: 1px solid #607D8B;
+	margin: auto;
+	padding: 20px;
+	font-size: 22px;
+}
+
+.mydiv{
+	width: 50%;
+	margin: auto;
+	padding: 20px;
+	font-size: 22px;	
+}
+.addcontainer {
+	width: 50%;
+	border: 1px solid #607D8B;
+	margin: auto;
+	padding: 20px;
+	font-size: 18px;	
+}
+.myadddiv{
+	width: 50%;
+	margin: auto;
+	padding: 20px;
+	font-size: 22px;	
+}
