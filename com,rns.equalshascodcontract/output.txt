@@ -1,0 +1,11 @@
+D:\rns-com\com,rns.equalshascodcontract>javac MyTestClass.java
+
+D:\rns-com\com,rns.equalshascodcontract>java MyTestClass
+Result Completed
+Student[studentId=1, studentName=Sachin, Address=Address[city=Mumbai, pincode=123]]
+Address[city=Mumbai, pincode=123]
+Student[studentId=1, studentName=Sachin, Address=Address[city=Mumbai, pincode=123]]
+Address[city=Mumbai, pincode=123]
+Successful...
+
+D:\rns-com\com,rns.equalshascodcontract>

@@ -1,0 +1,4 @@
+
+Equals and Hashcode Contracts
+
+https://stackoverflow.com/questions/6680157/how-to-remove-duplicate-objects-in-a-listmyobject-without-equals-hashcode
